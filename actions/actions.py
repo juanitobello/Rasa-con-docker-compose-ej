@@ -89,6 +89,7 @@ class ActionOpenIndex(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         dispatcher.utter_message(text="Redirigiendo...")
+        dispatcher.utter_message(text='[Curso AV IDE](https://ide.ucuenca.edu.ec/?p=412)')
         openLink()
         return []
 
@@ -102,8 +103,9 @@ class ActionOpenRicaurte(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        dispatcher.utter_message(text="Redirigiendo a Visor 1")
-        openRicaurte()
+        dispatcher.utter_message(text="Redirigiendo a Visor 1")        
+        dispatcher.utter_message(text="Click aqui para ver resultado: [construcciones Ricaurte](https://ide.ucuenca.edu.ec/geoportal/viwer/3?context=3&zoom=13&center=-78.98518,-2.87754&invisiblelayers=*&visiblelayers=89053566f0abfa20b936f539b27066bd,OSM)")        
+        #openRicaurte()
         return []
 
 #Open Postes
@@ -117,7 +119,8 @@ class ActionOpenPostes(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         dispatcher.utter_message(text="Redirigiendo a Visor 2")
-        openPostes()
+        dispatcher.utter_message(text="Click aqui para ver resultado: [capa transdistribucion](https://ide.ucuenca.edu.ec/geoportal/viwer/1?context=1&zoom=16&center=-79.01005,-2.90492&invisiblelayers=*&visiblelayers=508b5791b7ff3809f103bc57e1b50970,OSM)")        
+        #openPostes()
         return []
 
 
