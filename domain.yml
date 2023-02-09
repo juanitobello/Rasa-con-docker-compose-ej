@@ -12,6 +12,8 @@ intents:
   - int_saltar
   - int_ricaurte_construccion
   - int_ej_postes
+  - int_ej_sayausi
+  - int_ej_sanjoaquin
 
 
 actions: 
