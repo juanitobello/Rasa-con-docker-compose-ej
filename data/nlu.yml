@@ -117,8 +117,6 @@ nlu:
   - intent: int_ej_sanjoaquin
     examples: |
       - inundaciones en San Joaquin
-      -  en []{}
-      -  en []{}
 
 #Intecion: Zona Agricola
 - intent: int_zona_agricola
@@ -173,28 +171,28 @@ nlu:
       - relieves de [San Joaquin]{"entity:"place", "value":"San Joaquin"}
   
 #Geologia
-- intent: int_geologia
-  examples: |
-    -  en []{}
-    -  en []{}
-    -  en []{}
+# - intent: int_geologia
+#   examples: |
+#     -  en []{}
+#     -  en []{}
+#     -  en []{}
 
 
 #TODO: riesgos
 #Riesgo de deslizamientos
 
-- intent: int_riesgo_deslizamientos
-  examples: |
-    - riesgo de deslizamientos
-    - riesgos de deslizamintos en [San Joaquin]{"entity:"place", "value":"San Joaquin"}
-    - deslizamientos
-    - deslizamientos en [Baños]{"entity:"place", "value":"Baños"}
-    - deslizamientos de tierra 
-    - deslizamiento de tierra en [Baños]{"entity:"place", "value":"Baños"}
-    - deslaves 
-    - deslaves
-    - riesgo de deslave
-    - riesgo de deslave en [Baños]{"entity:"place", "value":"Baños"}
+# - intent: int_riesgo_deslizamientos
+#   examples: |
+#     - riesgo de deslizamientos
+#     - riesgos de deslizamintos en [San Joaquin]{"entity:"place", "value":"San Joaquin"}
+#     - deslizamientos
+#     - deslizamientos en [Baños]{"entity:"place", "value":"Baños"}
+#     - deslizamientos de tierra 
+#     - deslizamiento de tierra en [Baños]{"entity:"place", "value":"Baños"}
+#     - deslaves 
+#     - deslaves
+#     - riesgo de deslave
+#     - riesgo de deslave en [Baños]{"entity:"place", "value":"Baños"}
 
 #Riesgos de Caida Geologica
 - intent: int_riesgo_caidas
