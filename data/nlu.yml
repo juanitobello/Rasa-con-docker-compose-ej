@@ -114,9 +114,9 @@ nlu:
     - deslizamientos en Sayausí
     - derrumbes en Sayausí
 
-  - intent: int_ej_sanjoaquin
-    examples: |
-      - inundaciones en San Joaquin
+- intent: int_ej_sanjoaquin
+  examples: |
+    - inundaciones en San Joaquin
 
 #Intecion: Zona Agricola
 - intent: int_zona_agricola
