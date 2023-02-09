@@ -20,17 +20,17 @@ stories:
   - intent: int_saltar
   - action: utter_listo_veamos_el_mapa
 
-- story: story_ej_ricaurte
-  steps: 
-  - intent: int_ricaurte_construccion
-  - action: action_open_ricaurte
-  - action: utter_te_ayudo_algo_mas
+# - story: story_ej_ricaurte
+#   steps: 
+#   - intent: int_ricaurte_construccion
+#   - action: action_open_ricaurte
+#   - action: utter_te_ayudo_algo_mas
 
-- story: story_ej_postes
-  steps: 
-  - intent: int_ej_postes  
-  - action: action_open_postes
-  - action: utter_te_ayudo_algo_mas
+# - story: story_ej_postes
+#   steps: 
+#   - intent: int_ej_postes  
+#   - action: action_open_postes
+#   - action: utter_te_ayudo_algo_mas
 
 - story: story_sayausi
   steps:
