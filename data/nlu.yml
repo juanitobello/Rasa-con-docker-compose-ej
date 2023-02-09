@@ -119,154 +119,154 @@ nlu:
     - inundaciones en San Joaquin
 
 #Intecion: Zona Agricola
-- intent: int_zona_agricola
-  examples: |
-    - zona agrícola 
-    - zona agricola en [Ricaurte]{"entity:"place", "value":"Ricaurte"}
-    - zona agricola en [San Joaquin]{"entity:"place", "value":"San Joaquin"}
-    - zonas agricolas en [El Valle]{"entity:"place", "value":"El Valle"}
-    - zonas agricolas en [Tarqui]{"entity:"place", "value":"Tarqui"}
-    - cultivos
-    - cultivos en [Ricaurte]{"entity:"place", "value":"Ricaurte"}
-    - zona para cultivar
-    - zona para cultivar en [El Valle]{"entity:"place", "value":"El Valle"}
+# - intent: int_zona_agricola
+#   examples: |
+#     - zona agrícola 
+#     - zona agricola en [Ricaurte]{"entity:"place", "value":"Ricaurte"}
+#     - zona agricola en [San Joaquin]{"entity:"place", "value":"San Joaquin"}
+#     - zonas agricolas en [El Valle]{"entity:"place", "value":"El Valle"}
+#     - zonas agricolas en [Tarqui]{"entity:"place", "value":"Tarqui"}
+#     - cultivos
+#     - cultivos en [Ricaurte]{"entity:"place", "value":"Ricaurte"}
+#     - zona para cultivar
+#     - zona para cultivar en [El Valle]{"entity:"place", "value":"El Valle"}
     
     
 
-#Intecion: Zona Insdustrian grande
-- intent: int_zona_insdustrial_grande
-  examples: |
-    - zona industrial grande
-    - zona industrial grande [Ricaurte]{"entity:"place","value":"Ricaurte"}
-    - zona industrial grande en [San Joaquin]{"entity:"place", "value":"San Joaquin"}
-    - zonas industriales grandes en [San Joaquin]{"entity:"place", "value":"San Joaquin"}
-    - zonas industriales grandes en [Tarqui]{"entity:"place", "value":"Tarqui"}
-    - industria
-    - insdustria en [Tarqui]{"entity:"place", "value":"Tarqui"}
-    - industrias
-    - industrias en [Tarqui]{"entity:"place", "value":"Tarqui"} 
-    - industrias grandes 
-    - industrias grandes en [Tarqui]{"entity:"place", "value":"Tarqui"}
-    - fabrica
-    - fabricas
-    - fabricas de [Tarqui]{"entity:"place", "value":"Tarqui"}
-    - fabricas grandes en  en [Tarqui]{"entity:"place", "value":"Tarqui"}
+# #Intecion: Zona Insdustrian grande
+# - intent: int_zona_insdustrial_grande
+#   examples: |
+#     - zona industrial grande
+#     - zona industrial grande [Ricaurte]{"entity:"place","value":"Ricaurte"}
+#     - zona industrial grande en [San Joaquin]{"entity:"place", "value":"San Joaquin"}
+#     - zonas industriales grandes en [San Joaquin]{"entity:"place", "value":"San Joaquin"}
+#     - zonas industriales grandes en [Tarqui]{"entity:"place", "value":"Tarqui"}
+#     - industria
+#     - insdustria en [Tarqui]{"entity:"place", "value":"Tarqui"}
+#     - industrias
+#     - industrias en [Tarqui]{"entity:"place", "value":"Tarqui"} 
+#     - industrias grandes 
+#     - industrias grandes en [Tarqui]{"entity:"place", "value":"Tarqui"}
+#     - fabrica
+#     - fabricas
+#     - fabricas de [Tarqui]{"entity:"place", "value":"Tarqui"}
+#     - fabricas grandes en  en [Tarqui]{"entity:"place", "value":"Tarqui"}
 
-#Intecnio de tipos y clasificacion de suelo
-  - intent: int_tipos_de_suelo
-    examples: |
-      - tipos de suelo
-      - clasificación de suelo
-      - tipos de suelo en [San Joaquin]{"entity:"place", "value":"San Joaquin"}
-      - clasificación de suelo [San Joaquin]{"entity:"place", "value":"San Joaquin"}
+# #Intecnio de tipos y clasificacion de suelo
+#   - intent: int_tipos_de_suelo
+#     examples: |
+#       - tipos de suelo
+#       - clasificación de suelo
+#       - tipos de suelo en [San Joaquin]{"entity:"place", "value":"San Joaquin"}
+#       - clasificación de suelo [San Joaquin]{"entity:"place", "value":"San Joaquin"}
 
-#Relieves
-  - intent: int_relieves
-    examples: |
-      - relieve
-      - relieve de [Baños]{"entity:"place", "value":"Baños"}
-      - relieve en [Baños]{"entity:"place", "value":"Baños"}
-      - relieves
-      - relieves en [Baños]{"entity:"place", "value":"Baños"}
-      - relieves de [San Joaquin]{"entity:"place", "value":"San Joaquin"}
+# #Relieves
+#   - intent: int_relieves
+#     examples: |
+#       - relieve
+#       - relieve de [Baños]{"entity:"place", "value":"Baños"}
+#       - relieve en [Baños]{"entity:"place", "value":"Baños"}
+#       - relieves
+#       - relieves en [Baños]{"entity:"place", "value":"Baños"}
+#       - relieves de [San Joaquin]{"entity:"place", "value":"San Joaquin"}
   
-#Geologia
-# - intent: int_geologia
+# #Geologia
+# # - intent: int_geologia
+# #   examples: |
+# #     -  en []{}
+# #     -  en []{}
+# #     -  en []{}
+
+
+# #TODO: riesgos
+# #Riesgo de deslizamientos
+
+# # - intent: int_riesgo_deslizamientos
+# #   examples: |
+# #     - riesgo de deslizamientos
+# #     - riesgos de deslizamintos en [San Joaquin]{"entity:"place", "value":"San Joaquin"}
+# #     - deslizamientos
+# #     - deslizamientos en [Baños]{"entity:"place", "value":"Baños"}
+# #     - deslizamientos de tierra 
+# #     - deslizamiento de tierra en [Baños]{"entity:"place", "value":"Baños"}
+# #     - deslaves 
+# #     - deslaves
+# #     - riesgo de deslave
+# #     - riesgo de deslave en [Baños]{"entity:"place", "value":"Baños"}
+
+# #Riesgos de Caida Geologica
+# - intent: int_riesgo_caidas
 #   examples: |
-#     -  en []{}
-#     -  en []{}
-#     -  en []{}
+#     - risgo geológico
+#     - riesgo geológico en [Tarqui]{"entity:"place", "value":"Tarqui"} 
+#     - riesgos geológicos
+#     - riesgos geológicos en [Turi]{"entity:"place", "value":"Turi"}
+#     - riesgo de caida
+#     - riesgo de caida en [Baños]{"entity:"place", "value":"Baños"}
+#     - riesgos de caidas 
+#     - riesgos de caidas en [Turi]{"entity:"place", "value":"Turi"}
 
-
-#TODO: riesgos
-#Riesgo de deslizamientos
-
-# - intent: int_riesgo_deslizamientos
+# #TODO: Areas protegidas
+# - intent: int_areas_protegidas
 #   examples: |
-#     - riesgo de deslizamientos
-#     - riesgos de deslizamintos en [San Joaquin]{"entity:"place", "value":"San Joaquin"}
-#     - deslizamientos
-#     - deslizamientos en [Baños]{"entity:"place", "value":"Baños"}
-#     - deslizamientos de tierra 
-#     - deslizamiento de tierra en [Baños]{"entity:"place", "value":"Baños"}
-#     - deslaves 
-#     - deslaves
-#     - riesgo de deslave
-#     - riesgo de deslave en [Baños]{"entity:"place", "value":"Baños"}
+#     - área protegida 
+#     - área protegida en [San Joaquin]{"entity:"place", "value":"San Joaquin"} 
+#     - áreas protegidas
+#     - áreas protegidas en [Turi]{"entity:"place", "value":"Turi"}
+#     - bosques protegidos
+#     - bosques protegidos en [Nulti]{"entity:"place", "value":"Nulti"}
+#     - vegetación protegida 
+#     - vegetación proyegidda en [Llacao]{"entity:"place", "value":"Llacao"}
+#     - zona protegida 
+#     - zona protegida en [Turi]{"entity:"place", "value":"Turi"}
+#     - zonas protegidas en [Turi]{"entity:"place", "value":"Turi"}
+#     - áreas naturales protegidas
+#     - progedias
 
-#Riesgos de Caida Geologica
-- intent: int_riesgo_caidas
-  examples: |
-    - risgo geológico
-    - riesgo geológico en [Tarqui]{"entity:"place", "value":"Tarqui"} 
-    - riesgos geológicos
-    - riesgos geológicos en [Turi]{"entity:"place", "value":"Turi"}
-    - riesgo de caida
-    - riesgo de caida en [Baños]{"entity:"place", "value":"Baños"}
-    - riesgos de caidas 
-    - riesgos de caidas en [Turi]{"entity:"place", "value":"Turi"}
+# #Cajas
+# - intent: int_cajas
+#   examples: |
+#     - Cajas
+#     - en el Cajas
+#     - Paque Cajas
+#     - el Cajas
+#     - Parque Nacional Cajas
 
-#TODO: Areas protegidas
-- intent: int_areas_protegidas
-  examples: |
-    - área protegida 
-    - área protegida en [San Joaquin]{"entity:"place", "value":"San Joaquin"} 
-    - áreas protegidas
-    - áreas protegidas en [Turi]{"entity:"place", "value":"Turi"}
-    - bosques protegidos
-    - bosques protegidos en [Nulti]{"entity:"place", "value":"Nulti"}
-    - vegetación protegida 
-    - vegetación proyegidda en [Llacao]{"entity:"place", "value":"Llacao"}
-    - zona protegida 
-    - zona protegida en [Turi]{"entity:"place", "value":"Turi"}
-    - zonas protegidas en [Turi]{"entity:"place", "value":"Turi"}
-    - áreas naturales protegidas
-    - progedias
+# #Intencion: Infraestructura vial
+# - intent: int_infraestructura vial
+#   examples: |
+#     - infraestructura vial 
+#     - infraestructura vial en [San Joaquin]{"entity:"place", "value":"San Joaquin"} 
+#     - vías 
+#     - vías en [Santa Ana]{"entity:"place", "value":"Santa Ana"}
+#     - calles y avenidas 
+#     - calles y avenidas de [San Joaquin]{"entity:"place", "value":"San Joaquin"}   
+#     - calles 
+#     - calles de [Totoracocha]{"entity:"place", "value":"Totoracocha"} 
+#     - carretera 
+#     - carreteras
+#     - carreterras en [Cuenca]{"entity:"place", "value":"Cuenca"} 
+#     - ejecución vial
 
-#Cajas
-- intent: int_cajas
-  examples: |
-    - Cajas
-    - en el Cajas
-    - Paque Cajas
-    - el Cajas
-    - Parque Nacional Cajas
-
-#Intencion: Infraestructura vial
-- intent: int_infraestructura vial
-  examples: |
-    - infraestructura vial 
-    - infraestructura vial en [San Joaquin]{"entity:"place", "value":"San Joaquin"} 
-    - vías 
-    - vías en [Santa Ana]{"entity:"place", "value":"Santa Ana"}
-    - calles y avenidas 
-    - calles y avenidas de [San Joaquin]{"entity:"place", "value":"San Joaquin"}   
-    - calles 
-    - calles de [Totoracocha]{"entity:"place", "value":"Totoracocha"} 
-    - carretera 
-    - carreteras
-    - carreterras en [Cuenca]{"entity:"place", "value":"Cuenca"} 
-    - ejecución vial
-
-#Intencion: Alcantarillado
-- intent: int_alcantarillado
-  examples: |
-    - alcanarillado
-    - alcantarillado en [Sinincay]{"entity:"place", "value":"Sinincay"}
-    - alcantarillas
-    - alcantarillas en [Cuenca]{"entity:"place", "value":"Cuenca"}
-    - Mapa de alcantarillas
-    - ubicación de alcantarillas 
-    - ubicación de alcantarillas en [El Valle]{"entity:"place", "value":"El Valle"}
-    - pozos 
-    - pozos sépticos en [Sidcay]{"entity:"place", "value":"Sidcay"}
+# #Intencion: Alcantarillado
+# - intent: int_alcantarillado
+#   examples: |
+#     - alcanarillado
+#     - alcantarillado en [Sinincay]{"entity:"place", "value":"Sinincay"}
+#     - alcantarillas
+#     - alcantarillas en [Cuenca]{"entity:"place", "value":"Cuenca"}
+#     - Mapa de alcantarillas
+#     - ubicación de alcantarillas 
+#     - ubicación de alcantarillas en [El Valle]{"entity:"place", "value":"El Valle"}
+#     - pozos 
+#     - pozos sépticos en [Sidcay]{"entity:"place", "value":"Sidcay"}
 
 
-#redes hidrograficas
-  - intent: int_redes_hidrografias
-    examples: |
-      - vertientes de agua
-      - vertientes de agua en [Ricaurte]{"entity:"place","value":"Ricaurte"}
+# #redes hidrograficas
+#   - intent: int_redes_hidrografias
+#     examples: |
+#       - vertientes de agua
+#       - vertientes de agua en [Ricaurte]{"entity:"place","value":"Ricaurte"}
 
 
 
