@@ -20,6 +20,8 @@ actions:
   - action_open_index
   - action_open_postes
   - action_open_ricaurte
+  - action_sayausi
+  - action_sanjoaquin
 
 responses:
   utter_bienvenida:

@@ -124,6 +124,36 @@ class ActionOpenPostes(Action):
         return []
 
 
+#Open Postes
+class ActionSayausi(Action):
+
+    def name(self) -> Text:
+        return "action_sayausi"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        dispatcher.utter_message(text="Cargando Visor 2")
+        dispatcher.utter_message(text="Click aqui para ver resultado: [Resultado Sayausi](https://ide.ucuenca.edu.ec/geoportal/viwer/2?context=2&zoom=15&center=-79.07272,-2.87452&invisiblelayers=*&visiblelayers=c87a54091a46f9f560975bca3d5bd4eb,22baf1087c32ec231faf06aae2574b51,OSM)")        
+        return []
+
+
+class ActionSanJoaquin(Action):
+
+    def name(self) -> Text:
+        return "action_sanjoaquin"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        dispatcher.utter_message(text="Cargando Visor 2")
+        dispatcher.utter_message(text="Click aqui para ver resultado: [Resultado San Joaquin](https://ide.ucuenca.edu.ec/geoportal/viwer/2?context=2&zoom=15&center=-79.05164,-2.8938&invisiblelayers=*&visiblelayers=d0fdca5f9279b7d97497ad298f0ed750,OSM)")        
+        return []
+
+
+
 
 #Actions para 4 votones
 class ActionButtons(Action):

@@ -31,3 +31,15 @@ stories:
   - intent: int_ej_postes  
   - action: action_open_postes
   - action: utter_te_ayudo_algo_mas
+
+- story: story_sayausi
+  steps:
+  - intent: int_ej_sayausi
+  - action: action_sayausi
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_sanjoaquin
+  steps: 
+  - intent: int_ej_sanjoaquin
+  - action: action_sanjoaquin
+  - action: utter_te_ayudo_algo_mas
