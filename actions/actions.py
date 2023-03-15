@@ -45,6 +45,8 @@ def openRicaurte():
 def openPostes():
     webbrowser.open('https://ide.ucuenca.edu.ec/geoportal/viwer/1?context=1&zoom=16&center=-79.01005,-2.90492&invisiblelayers=*&visiblelayers=508b5791b7ff3809f103bc57e1b50970,OSM',  new=1, autoraise=True)
 
+
+#Clases de Rasa
 class ActionHelloWorld(Action):
 
     def name(self) -> Text:
