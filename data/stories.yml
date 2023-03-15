@@ -43,3 +43,9 @@ stories:
   - intent: int_ej_sanjoaquin
   - action: action_sanjoaquin
   - action: utter_te_ayudo_algo_mas
+
+- story: story_redes_hidrografias
+  steps: 
+  - intent: int_redes_hidrografias
+  - action: action_redes_hidrograficas
+  - action: utter_te_ayudo_algo_mas

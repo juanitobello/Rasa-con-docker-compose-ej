@@ -1,4 +1,4 @@
-ersion: "3.1"
+version: "3.1"
 
 intents:
   - greet
@@ -14,6 +14,7 @@ intents:
   - int_ej_postes
   - int_ej_sayausi
   - int_ej_sanjoaquin
+  - int_redes_hidrografias
 
 
 actions: 
@@ -24,6 +25,7 @@ actions:
   - action_open_ricaurte
   - action_sayausi
   - action_sanjoaquin
+  - action_redes_hidrograficas
 
 responses:
   utter_bienvenida:
