@@ -20,22 +20,28 @@ stories:
   - intent: int_saltar
   - action: utter_listo_veamos_el_mapa
 
-# - story: story_ej_ricaurte
-#   steps: 
-#   - intent: int_ricaurte_construccion
-#   - action: action_open_ricaurte
-#   - action: utter_te_ayudo_algo_mas
+- story: story_ej_ricaurte
+  steps: 
+  - intent: int_ricaurte_construccion
+  - action: action_open_ricaurte
+  - action: utter_te_ayudo_algo_mas
 
-# - story: story_ej_postes
-#   steps: 
-#   - intent: int_ej_postes  
-#   - action: action_open_postes
-#   - action: utter_te_ayudo_algo_mas
+- story: story_ej_postes
+  steps: 
+  - intent: int_ej_postes  
+  - action: action_open_postes
+  - action: utter_te_ayudo_algo_mas
 
 - story: story_sayausi
   steps:
   - intent: int_ej_sayausi
   - action: action_sayausi
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_farmacias
+  steps:
+  - intent: int_ej_farmacia
+  - action: action_farmacias
   - action: utter_te_ayudo_algo_mas
 
 - story: story_sanjoaquin
@@ -44,8 +50,387 @@ stories:
   - action: action_sanjoaquin
   - action: utter_te_ayudo_algo_mas
 
+
 - story: story_redes_hidrografias
   steps: 
   - intent: int_redes_hidrografias
   - action: action_redes_hidrograficas
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_accidentes_de_transito
+  steps:
+  - intent: int_accidentes_de_transito
+  - action: action_accidentes_de_transito_siniestros
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_actividades_economicas
+  steps: 
+  - intent: int_actividades_economicas
+  - action: action_actividades_economicas
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_adjudicacion_de_agua
+  steps: 
+  - intent: int_adjudicacion_de_agua
+  - action: action_adjudicaciones_de_agua
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_adultos_mayores
+  steps:
+  - intent: int_adultos_mayores
+  - action: action_adultos_mayores
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_personas_con_discapacidad
+  steps:
+  - intent: int_personas_con_discapacidad
+  - action: action_adultos_mayores_discapacidad
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_alcantarillado
+  steps: 
+  - intent: int_alcantarillado
+  - action: action_alcantarillado
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_areas_historicas
+  steps: 
+  - intent: int_areas_historicas
+  - action: action_areas_historicas
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_areas_protegidas
+  steps: 
+  - intent: int_areas_protegidas
+  - action: action_areas_protegidas
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_areas_verdes
+  steps:
+  - intent: int_areas_verdes
+  - action: action_areas_verdes
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_areas_verdes_arboles
+  steps:
+  - intent: int_areas_verdes_arboles
+  - action: action_areas_verdes_arboles
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_cajas
+  steps: 
+  - intent: int_cajas
+  - action: action_areas_verdes_parque_cajas
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_parques
+  steps: 
+  - intent: int_parques
+  - action: action_parques
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_asentamientos_humanos
+  steps:
+  - intent: int_asentamientos_humanos
+  - action: action_asentamientos_humanos
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_biosfera
+  steps: 
+  - intent: int_biosfera
+  - action: action_biosfera
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_cabecera_cantonal
+  steps:
+  - intent: int_cabecera_cantonal
+  - action: action_cabecera_cantonal
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_calidad_del_aire
+  steps:
+  - intent: int_calidad_del_aire
+  - action: action_calidad_del_aire
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_canalizacion
+  steps:
+  - intent: int_canalizacion
+  - action: action_canalizacion
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_cantones_del_azuay
+  steps:
+  - intent: int_cantones_del_azuay
+  - action: action_cantones_del_azual
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_cartografia
+  steps:
+  - intent: int_cartografia
+  - action: action_cartografia
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_catastro
+  steps:
+  - intent: int_catastro
+  - action: action_catastro
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_circuito
+  steps:
+  - intent: int_circuito
+  - action: action_circuito
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_clima
+  steps:
+  - intent: int_clima
+  - action: action_clima
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_lluvia
+  steps: 
+  - intent: int_lluvia
+  - action: action_lluvia
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_fenomeno_de_niño
+  steps:
+  - intent: int_fenomeno_de_niño
+  - action: action_fenomeno_de_niño
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_cobertura_vegetal
+  steps:
+  - intent: int_cobertura_vegetal
+  - action: action_cobertura_vegetal
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_distritos
+  steps:
+  - intent: int_distritos
+  - action: action_distritos
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_ductos
+  steps:
+  - intent: int_ductos
+  - action: action_ductos
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_energia_electrica
+  steps: 
+  - intent: int_energia_electrica
+  - action: action_energia_electrica
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_equipo_aprovisionamiento
+  steps: 
+  - intent: int_equipo_aprovisionamiento
+  - action: action_equipamiento_aprovisionamiento
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_bienestar_social
+  steps:
+  - intent: int_bienestar_social
+  - action: action_equipamiento_bienestar_social
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_equipo_educacion
+  steps: 
+  - intent: int_equipo_educacion
+  - action: action_equipamiento_educacion
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_equipo_recoleccion
+  steps: 
+  - intent: int_equipo_recoleccion
+  - action: action_equipamiento_recoleccion
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_equipo_recreacion_deporte
+  steps:
+  - intent: int_equipo_recreacion_deporte
+  - action: action_equipamiento_recreacion_y_deporte
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_equipo_salud
+  steps:
+  - intent: int_equipo_salud
+  - action: action_equipamiento_salud
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_equipo_seguridad
+  steps: 
+  - intent: int_equipo_seguridad
+  - action: action_equipamiento_seguridad
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_equipo_servicios
+  steps: 
+  - intent: int_equipo_servicios
+  - action: action_equipamiento_servicio
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_erosion_del_suelo
+  steps:
+  - intent: int_erosion_del_suelo
+  - action: action_erosion_de_suelos
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_estaciones_tranvia
+  steps: 
+  - intent: int_estaciones_tranvia
+  - action: action_estaciones
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_etapa
+  steps:
+  - intent: int_etapa
+  - action: action_etapa
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_explotacion_minera
+  steps: 
+  - intent: int_explotacion_minera
+  - action: action_explotacion_minera
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_gas
+  steps: 
+  - intent: int_gas
+  - action: action_gas
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_gasolineras
+  steps:
+  - intent: int_gasolineras
+  - action: action_gasolineras
+  - action:  utter_te_ayudo_algo_mas
+
+- story: story_geologia
+  steps: 
+  - intent: int_geologia
+  - action: action_geologia
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_geopedologia
+  steps:
+  - intent: int_geopedologia
+  - action: action_geopedologia
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_humedales
+  steps:
+  - intent: int_humedales
+  - action: action_humedales
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_imagenes_satelitales
+  steps:
+  - intent: int_imagenes_satelitales
+  - action: action_imagen_satelital
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_incendios
+  steps:
+   - intent: int_incendios
+   - action: action_incendios
+   - action: utter_te_ayudo_algo_mas
+  
+- story: story_indice_envejecimiento
+  steps:
+  - intent: int_indice_envejecimiento
+  - action: action_indice_de_envegecimiento
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_industria_pequeña
+  steps: 
+  - intent: int_industria_pequeña
+  - action: action_industria_pequeña
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_infraestructura_transporte
+  steps:
+  - intent: int_infraestructura_transporte
+  - action: action_infrestructura_transporte
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_riesgo_deslizamientos
+  steps:
+  - intent: int_riesgo_deslizamientos
+  - action: action_riesgo_de_deslizamientos
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_riesgo_caidas
+  steps:
+  - intent: int_riesgo_caidas
+  - action: action_riesgos_de_caida
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_inspecciones_de_riesgos
+  steps:
+  - intent: int_inspecciones_de_riesgos
+  - action: action_inspecciones_de_riesgos
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_internet
+  steps:
+  - intent: int_internet
+  - action: action_internet
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_jerarquia_de_asentamientos
+  steps:
+  - intent: int_jerarquia_de_asentamientos
+  - action: action_jerarquia_de_asentamientos
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_limites
+  steps:
+  - intent: int_limites
+  - action: action_limites
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_manzanas
+  steps:
+  - intent: int_manzanas
+  - action: action_manzanas
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_montañas_y_lomas
+  steps:
+  - intent: int_montañas_y_lomas
+  - action: action_montañas_y_lomas
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_parroquias
+  steps:
+  - intent: int_parroquias
+  - action: action_parroquias
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_relieves
+  steps:
+  - intent: int_relieves
+  - action: action_relieve
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_tipos_de_suelo
+  steps:
+  - intent: int_tipos_de_suelo
+  - action: action_tipos_de_suelos
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_zona_agricola
+  steps:
+  - intent: int_zona_agricola
+  - action: action_zona_agricola
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_zona_insdustrial
+  steps:
+  - intent: int_zona_insdustrial_grande
+  - action: action_zona_industrial
   - action: utter_te_ayudo_algo_mas

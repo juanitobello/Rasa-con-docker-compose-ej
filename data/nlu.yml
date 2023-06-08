@@ -1,4 +1,4 @@
-version: "3.4"
+version: "3.1"
 
 nlu:
 - intent: greet
@@ -10,18 +10,14 @@ nlu:
     - buenos dias
     - buenas tardes
     - que tal
+
 - intent: goodbye
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
+    - adios
+    - chao
     - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - good night
+
 - intent: affirmacion
   examples: |
     - yes
@@ -32,6 +28,7 @@ nlu:
   examples: |
     - saltar
     - saltar instrucciones
+
 - intent: deny
   examples: |
     - no
@@ -41,6 +38,7 @@ nlu:
     - don't like that
     - no way
     - not really
+
 - intent: mood_great
   examples: |
     - perfect
@@ -57,6 +55,7 @@ nlu:
     - so so perfect
     - so good
     - so perfect
+
 - intent: mood_unhappy
   examples: |
     - my day was horrible
@@ -73,12 +72,13 @@ nlu:
     - extremly sad
     - so saad
     - so sad
+
 - intent: bot_challenge
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - quien eres?
+    - eres un robot?
+    - con quien hablo?
+
 - intent: direcciones
   examples: | 
     - muestrame la direccion de 
@@ -118,58 +118,7 @@ nlu:
   examples: |
     - inundaciones en San Joaquin
 
-#Intecion: Zona Agricola
-- intent: int_zona_agricola
-  examples: |
-    - zona agrícola 
-    - zona agricola en [Ricaurte]{"entity:"place", "value":"Ricaurte"}
-    - zona agricola en [San Joaquin]{"entity:"place", "value":"San Joaquin"}
-    - zonas agricolas en [El Valle]{"entity:"place", "value":"El Valle"}
-    - zonas agricolas en [Tarqui]{"entity:"place", "value":"Tarqui"}
-    - cultivos
-    - cultivos en [Ricaurte]{"entity:"place", "value":"Ricaurte"}
-    - zona para cultivar
-    - zona para cultivar en [El Valle]{"entity:"place", "value":"El Valle"}
-    
-    
 
-#Intecion: Zona Insdustrian grande
-- intent: int_zona_insdustrial_grande
-  examples: |
-    - zona industrial grande
-    - zona industrial grande [Ricaurte]{"entity:"place","value":"Ricaurte"}
-    - zona industrial grande en [San Joaquin]{"entity:"place", "value":"San Joaquin"}
-    - zonas industriales grandes en [San Joaquin]{"entity:"place", "value":"San Joaquin"}
-    - zonas industriales grandes en [Tarqui]{"entity:"place", "value":"Tarqui"}
-    - industria
-    - insdustria en [Tarqui]{"entity:"place", "value":"Tarqui"}
-    - industrias
-    - industrias en [Tarqui]{"entity:"place", "value":"Tarqui"} 
-    - industrias grandes 
-    - industrias grandes en [Tarqui]{"entity:"place", "value":"Tarqui"}
-    - fabrica
-    - fabricas
-    - fabricas de [Tarqui]{"entity:"place", "value":"Tarqui"}
-    - fabricas grandes en  en [Tarqui]{"entity:"place", "value":"Tarqui"}
-
-#Intecnio de tipos y clasificacion de suelo
-- intent: int_tipos_de_suelo
-  examples: |
-    - tipos de suelo
-    - clasificación de suelo
-    - tipos de suelo en [San Joaquin]{"entity:"place", "value":"San Joaquin"}
-    - clasificación de suelo [San Joaquin]{"entity:"place", "value":"San Joaquin"}
-
-#Relieves
-- intent: int_relieves
-  examples: |
-    - relieve
-    - relieve de [Baños]{"entity:"place", "value":"Baños"}
-    - relieve en [Baños]{"entity:"place", "value":"Baños"}
-    - relieves
-    - relieves en [Baños]{"entity:"place", "value":"Baños"}
-    - relieves de [San Joaquin]{"entity:"place", "value":"San Joaquin"}
-  
 #Geologia
 # - intent: int_geologia
 #   examples: |
@@ -178,50 +127,139 @@ nlu:
 #     -  en []{}
 
 
-#TODO: riesgos
-#Riesgo de deslizamientos
-
-# - intent: int_riesgo_deslizamientos
-#   examples: |
-#     - riesgo de deslizamientos
-#     - riesgos de deslizamintos en [San Joaquin]{"entity:"place", "value":"San Joaquin"}
-#     - deslizamientos
-#     - deslizamientos en [Baños]{"entity:"place", "value":"Baños"}
-#     - deslizamientos de tierra 
-#     - deslizamiento de tierra en [Baños]{"entity:"place", "value":"Baños"}
-#     - deslaves 
-#     - deslaves
-#     - riesgo de deslave
-#     - riesgo de deslave en [Baños]{"entity:"place", "value":"Baños"}
-
-#Riesgos de Caida Geologica
-- intent: int_riesgo_caidas
+#redes hidrograficas
+- intent: int_redes_hidrografias
   examples: |
-    - risgo geológico
-    - riesgo geológico en [Tarqui]{"entity:"place", "value":"Tarqui"} 
-    - riesgos geológicos
-    - riesgos geológicos en [Turi]{"entity:"place", "value":"Turi"}
-    - riesgo de caida
-    - riesgo de caida en [Baños]{"entity:"place", "value":"Baños"}
-    - riesgos de caidas 
-    - riesgos de caidas en [Turi]{"entity:"place", "value":"Turi"}
+    - vertientes de agua
+    - vertientes de agua [en el barrio totorachocha]{"entity":"place","value":"totorachocha"}                    
+    - redes hidrograficas 
+    - redes hidrograficas en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - ríos 
+    - riachuelo 
+    - río 
+    - calidad el agua
 
-#TODO: Areas protegidas
+
+#accidentes de transito
+- intent: int_accidentes_de_transito
+  examples: | 
+    - accidentes de transito
+    - accidentes de transito en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - siniestros
+    - siniestros en [Totorachocha]{"entity":"place","value":"Totorachocha"}
+    - choque de carros
+    - choque de carros en [Sinincay]{"entity":"place", "value":"Sinincay"}
+    - choque de autos
+    - accidente de coche
+    - accidente de tráfico
+    - accidente de auto
+    - accidente automovilístico
+    - accidente del coche
+
+#actividades Economicas
+- intent: int_actividades_economicas
+  examples: |
+    - actividades economicas 
+    - actividad economica
+    - economia
+    - relaciones internacionales y de cooperación
+    - actividades economicas en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - actividad economica en [Totorachocha]{"entity":"place","value":"Totorachocha"}
+
+#Adjudicaciones de Agua
+- intent: int_adjudicacion_de_agua
+  examples: | 
+    - adjudicacion de agua
+    - adjudicacion de agua en [Totorachocha]{"entity":"place","value":"Totorachocha"}
+    - adjudicaciones de agua
+    - adjudicaciones de agua en [Cuenca]{"entity":"place","value":"Cuenca"}
+
+#aduntos mayores
+- intent: int_adultos_mayores
+  examples: |
+    - adultos mayores
+    - adultos mayores en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - personas adultos mayores
+    - demografia adultos mayores 
+
+# personas con dispacapacidad 
+- intent: int_personas_con_discapacidad
+  examples: |
+    - personas con discapacidad 
+    - personas con discapacidad en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - discapacitados 
+    - discapacitado
+    - capacidades diferentes
+    - capacidades especiales 
+    - personas minusválidas
+    - personas inválidas
+    - gente discapacitada en [Cuenca]{"entity":"place","value":"Cuenca"}
+
+#Intencion: Alcantarillado
+- intent: int_alcantarillado
+  examples: |
+    - alcanarillado
+    - alcantarillado en [Sinincay]{"entity":"place", "value":"Sinincay"}
+    - alcantarillas
+    - alcantarillas en [Cuenca]{"entity":"place", "value":"Cuenca"}
+    - Mapa de alcantarillas
+    - ubicación de alcantarillas 
+    - ubicación de alcantarillas en [El Valle]{"entity":"place", "value":"El Valle"}
+    - pozos 
+    - pozos sépticos en [Sidcay]{"entity":"place", "value":"Sidcay"}
+
+#TODO: Areas 
+#areas historicas
+- intent: int_areas_historicas
+  examples: | 
+    - areas historicas 
+    - áreas históricas
+    - áreas históricas en San Joaquin]{"entity":"place", "value":"San Joaquin"} 
+    - centro historico
+    - edificaciones historicas 
+    - casas historicas
+    - centro patrimonial 
+    - edificaciones patrimoniales
+    - casas patrimoniales
+    - casas patrimoniales en [Nulti]{"entity":"place", "value":"Nulti"}
+
+#areas protegidas
 - intent: int_areas_protegidas
   examples: |
     - área protegida 
-    - área protegida en [San Joaquin]{"entity:"place", "value":"San Joaquin"} 
+    - área protegida en [San Joaquin]{"entity":"place", "value":"San Joaquin"} 
     - áreas protegidas
-    - áreas protegidas en [Turi]{"entity:"place", "value":"Turi"}
+    - áreas protegidas en [Turi]{"entity":"place", "value":"Turi"}
     - bosques protegidos
-    - bosques protegidos en [Nulti]{"entity:"place", "value":"Nulti"}
+    - bosques protegidos en [Nulti]{"entity":"place", "value":"Nulti"}
     - vegetación protegida 
-    - vegetación proyegidda en [Llacao]{"entity:"place", "value":"Llacao"}
+    - vegetación proyegidda en [Llacao]{"entity":"place", "value":"Llacao"}
     - zona protegida 
-    - zona protegida en [Turi]{"entity:"place", "value":"Turi"}
-    - zonas protegidas en [Turi]{"entity:"place", "value":"Turi"}
+    - zona protegida en [Turi]{"entity":"place", "value":"Turi"}
+    - zonas protegidas en [Turi]{"entity":"place", "value":"Turi"}
     - áreas naturales protegidas
-    - progedias
+    - protegedias
+
+#Areas Verdes
+- intent: int_areas_verdes
+  examples: |
+    - area verde
+    - área verde
+    - areas verdes
+    - áreas verdes en San Joaquin]{"entity":"place", "value":"San Joaquin"} 
+    - zona verde
+    - zonas verdes en [Cuenca]{"entity":"place", "value":"Cuenca"}
+    - poligonos verdes
+    - emac
+    - EMAC
+
+#Areas verdes arboles
+- intent: int_areas_verdes_arboles
+  examples: |
+    - levantamiento forestal 
+    - arboles
+    - zona de arboles 
+    - arboleda
 
 #Cajas
 - intent: int_cajas
@@ -232,43 +270,593 @@ nlu:
     - el Cajas
     - Parque Nacional Cajas
 
+#parques
+- intent: int_parques
+  examples: |
+    - parques
+    - parque
+    - parque lineal 
+    - bancas en parques
+    - jardineras
+    - papeleras
+    - corredor verde
+    - plaza
+
+# asentamientos humanos
+- intent: int_asentamientos_humanos
+  examples: |
+    - asentamientos humanos 
+    - asentamientos humanos en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - grupos de asntamientos humanos
+    - asentamientos indigenas 
+    - asentamientos indigenas en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - indigenas
+    - indigenas en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - poblacion indigena
+    - poblacion indigena en [Cuenca]{"entity":"place","value":"Cuenca"}
+
+#biosfera
+- intent: int_biosfera
+  examples: | 
+    - biosfera
+    - bíosfera en [Cuenca]{"entity":"place","value":"Cuenca"}
+
+#cabecera cantonal
+- intent: int_cabecera_cantonal
+  examples: |
+    - cabeceras cantonales
+    - cabecera cantonal
+
+#calidad del aire
+- intent: int_calidad_del_aire
+  examples: | 
+    - calidad del aire
+    - calidad del aire en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - aire
+    - contaminación 
+    - contamincación en [Cuenca]{"entity":"place","value":"Cuenca"}
+
+# canalizacion
+- intent: int_canalizacion
+  examples: |
+    - canalizacion
+    - canalización en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - tramos de camalización 
+    - tramos de canalizacion en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - canales de desague
+    - canales de desague en [Cuenca]{"entity":"place","value":"Cuenca"}
+
+# cantones del azuay
+- intent: int_cantones_del_azuay
+  examples: |
+    - cantones del azuay
+    - cantones
+
+#cartografia
+- intent: int_cartografia 
+  examples: |
+    - cartografia 
+    - cartografía 
+
+#Catastros
+- intent: int_catastro
+  examples: |
+    - catastro
+    - catastros
+    - catastro interno 
+    - catastro en [Cuenca]{"entity":"place","value":"Cuenca"}
+
+#Circuito
+- intent: int_circuito 
+  examples: |
+    - circuito
+    - circuito en [Cuenca]{"entity":"place","value":"Cuenca"}
+
+#clima
+- intent: int_clima
+  examples: |
+    - clima
+    - clima en [Cuenca]{"entity":"place","value":"Cuenca"}
+
+- intent: int_lluvia
+  examples: |
+    - lluvia
+    - lluvia en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - precipitaciones 
+    - precipitaciones en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - cantidad de lluvia
+    - cantidad de lluvia en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - llovizna
+    - chubascos
+    - aguacero
+    - aguaceros en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - cantidad de lluvia
+    - cantidad de lluvia en [Cuenca]{"entity":"place","value":"Cuenca"}
+
+- intent: int_fenomeno_de_niño
+  examples: |
+    - fenomeno del niño
+    - corriente del niño
+    - Osilación del Sur
+
+#covertura vegetal 
+- intent: int_cobertura_vegetal
+  examples: |
+    - covertura vegetal 
+    - covertura vegetal en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - equipamiento de paramo y vegetación herbacea
+    - equipamiento de vegetacion herbacea
+    - equipamiento de paramo
+    - paramo
+    - paramos en [Ricaurte]{"entity":"place", "value":"Ricaurte"}
+    - vegetación herbacea 
+    - campo de vegatación herbacea en [Ricaurte]{"entity":"place", "value":"Ricaurte"}
+
+#cuencas hidrografcas 
+- intent: int_cuencas_hidrograficas 
+  examples: |
+    - lagos 
+    - lagunas 
+    - lagunas en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - cuencas hidrigraficas
+    - cuencas hidrográficas en [Cuenca]{"entity":"place","value":"Cuenca"}
+
+#distritos
+- intent: int_distritos
+  examples: |
+    - distritos 
+    - distritos en [Cuenca]{"entity":"place","value":"Cuenca"}
+
+#ductos
+- intent: int_ductos
+  examples: |
+    - ductos
+    - ductos en [Cuenca]{"entity":"place","value":"Cuenca"}
+
+#Energia electrica
+- intent: int_energia_electrica 
+  examples: |
+    - energía eléctrica
+    - energía eléctrica en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - redes eléctricas 
+    - redes eléctricas en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - sistema eléctrico
+    - sistema eléctrico en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - postes de energía eléctrica 
+    - cables de energía eléctrica
+    - sistema de energía eléctrica
+    - postes de luz 
+    - postes de luz en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - cables de luz 
+    - puntos de energía eléctrica
+    - puntos de energía eléctrica en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - puntos de carga 
+    - energía
+    - eléctrica
+    - cables subterraneos 
+    - cables subterraneos en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - cables aereos en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - medidores de luz
+    - medidores de luz en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - subestaciones centro sur 
+    - subestaciones en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - substaciones 
+    - carga electrica 
+  
+#Equipos de Aprovisionamiento 
+- intent: int_equipo_aprovisionamiento
+  examples: |
+    - equipos de aprovisionamiento
+    - aprovisionamiento
+    - mercado
+    - mercado en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - mercados 
+    - mercador en en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - centro de acopio
+    - centros de acopio en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - abastesimiento 
+    - centros de abastesimiento en [Cuenca]{"entity":"place","value":"Cuenca"}
+
+#equipos de bienestar social 
+- intent: int_bienestar_social
+  examples: |
+    - equipos de bienestar social
+    - bienestar social 
+    - centro infantil
+    - centros infantiles
+    - centros infantiles en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - centro protección especial 
+    - centros de protección especial en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - centro de desarrollo infantil 
+    - centros de desarrollo infantil en [Cuenca]{"entity":"place","value":"Cuenca"}
+
+#Equipamiento de Educacion
+- intent: int_equipo_educacion
+  examples: |
+    - equipamiento de educación
+    - equipos de educación
+    - escuelas
+    - colegios
+    - unidades educativas 
+    - academia
+
+#Equipamiento de roleccion
+- intent: int_equipo_recoleccion
+  examples: |
+    - equipamiento de recolección
+    - recolección
+    - puntos de recolección
+    - puntos de recolección en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - puntos de recolección de aceite usado
+    - puntos de recoleccion de aceite usado en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - puntos de recolección de pilas
+    - puntos de recoleccion de pilas en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - donde dejar aceite usado en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - donde dejar pilas usadas en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - establecimiento de recolección 
+    - establecimientos de recolección en [Cuenca]{"entity":"place","value":"Cuenca"}
+
+#equipamientos de recreacion y deporte 
+- intent: int_equipo_recreacion_deporte
+  examples: |
+    - equipamiento de recreación y deporte
+    - recreación y deporte
+    - recreación 
+    - deporte 
+    - academias de futbol 
+    - academias de basket 
+    - natación
+    - academias deportivas en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - centros deportivos en [Cuenca]{"entity":"place","value":"Cuenca"}
+
+#equipamiento de salud
+- intent: int_equipo_salud
+  examples: |
+    - equipamiento de salud
+    - salud
+    - dispensaio medico 
+    - dispensarios medicos en [San Joaquin]{"entity":"place", "value":"San Joaquin"} 
+    - dispensario de salud
+    - dispensarios de salud en [San Joaquin]{"entity":"place", "value":"San Joaquin"} 
+    - centro medico 
+    - centros medicos en [San Joaquin]{"entity":"place", "value":"San Joaquin"} 
+    - hospital 
+    - hospitales en [San Joaquin]{"entity":"place", "value":"San Joaquin"} 
+    - clinica
+    - clinicas en [San Joaquin]{"entity":"place", "value":"San Joaquin"} 
+    - enfermeria 
+    - enfermerias en [San Joaquin]{"entity":"place", "value":"San Joaquin"} 
+
+# equipamiento de seguridad
+- intent: int_equipo_seguridad
+  examples: |
+    - equipamiento de seguridad
+    - seguridad
+    - unidad de policia comunitaria
+    - policia
+    - UPC
+    - upc
+    - caseta de policia
+    - policia comunitaria
+    - puntos seguros
+  
+#equipamientos de servicios
+- intent: int_equipo_servicios
+  examples: |
+    - equipamiento de servicios
+    - servicios
+    - emov
+    - registro civil 
+    - registro civil en [San Joaquin]{"entity":"place", "value":"San Joaquin"} 
+    - servicios municipales 
+    - puntos de pago de servicios básicos
+    - servicios básicos 
+    - servicios básicos en [San Joaquin]{"entity":"place", "value":"San Joaquin"} 
+
+#Erosion del suelo
+- intent: int_erosion_del_suelo
+  examples: |
+    - erosión del suelo
+    - erosión
+    - erosión del suelo en [Ricaurte]{"entity":"place", "value":"Ricaurte"}
+    - deterioro del suelo
+    - deterioro del suelo en [Ricaurte]{"entity":"place", "value":"Ricaurte"}
+    - depresión del suelo
+
+#Estaciones tranvia
+- intent: int_estaciones_tranvia
+  examples: |
+    - estaciones del tranvia
+    - paradas de tranvia
+    - tranvia 
+
+#etapa
+- intent: int_etapa
+  examples: |
+    - etapa
+    - ETAPA EP
+    - levatamientos etapa
+    - donde pagar etapa
+    - puntos de pago etapa
+    - recaudación etapa
+    - cajas de dispersion de cobre
+    - armarios de distribución 
+    - cobertura secundaria de cobre
+    - ubicacion de nodos 
+    - tramos de canalización
+    - levantamientos etapa
+
+#expotacion minera
+- intent: int_explotacion_minera
+  examples: |
+    - explotación minera
+    - emplotación minera en [Sidcay]{"entity":"place","value":"Sidcay"}
+    - minería 
+    - mineria en [Sidcay]{"entity":"place","value":"Sidcay"}
+    - minas 
+    - minas en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - estado de minería
+    - zona minera en [Sidcay]{"entity":"place","value":"Sidcay"}
+    - zona de explotación minera en [Sidcay]{"entity":"place","value":"Sidcay"}
+    - petroleo
+    - consesiones mineras en [Sidcay]{"entity":"place","value":"Sidcay"}
+    - arcom
+
+#GAS
+- intent: int_gas
+  examples: |
+    - gas
+    - gas licuadro de petroleo 
+    - venta de gas
+    - venta de gas en [Ricaurte]{"entity":"place", "value":"Ricaurte"}
+    - almacenamiento de gas 
+    - gas de uso domestigo en [Ricaurte]{"entity":"place", "value":"Ricaurte"}
+
+#gasolineraas
+- intent: int_gasolineras
+  examples: |
+    - gasolineras
+    - gasolineras en [Ricaurte]{"entity":"place", "value":"Ricaurte"}
+    - gasolinera
+    - gasolineria en [Ricaurte]{"entity":"place", "value":"Ricaurte"}
+    - bomba
+    - bomba de gasolina 
+    - venta de gasolina 
+
+#geolgia 
+- intent: int_geologia
+  examples: |
+    - geología 
+    - geología  en [Ricaurte]{"entity":"place", "value":"Ricaurte"}
+    - geomorfología
+    - geomorfologia en [Ricaurte]{"entity":"place", "value":"Ricaurte"}
+    - geologia topográfica 
+    - geomorfología topográfica
+    - geomorfología topográfica en [Ricaurte]{"entity":"place", "value":"Ricaurte"}
+
+#geopedologia
+- intent: int_geopedologia
+  examples: |
+    - geopedología
+    - geopedologia en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - cartografia 
+
+#humedales
+- intent: int_humedales
+  examples: |
+    - humedales
+    - huemadales en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - tierra humeda 
+    - tierra humeda en [Cuenca]{"entity":"place","value":"Cuenca"}
+
+#imagen satelital
+- intent: int_imagenes_satelitales
+  examples: |
+    - imagenes satelitales 
+    - imagenes satelitales de [Cuenca]{"entity":"place","value":"Cuenca"}
+    - desde arriba
+    - fotos sateltales de [Cuenca]{"entity":"place","value":"Cuenca"}
+    - fotografias de [Cuenca]{"entity":"place","value":"Cuenca"}
+    - vista de drone
+    - emplazamiento
+    - plano general
+
+#Incendios
+- intent: int_incendios
+  examples: |
+    - incendios
+    - susceptibilidad a incendio
+    - incendios forestales 
+
+#Indice de envejecimiento
+- intent: int_indice_envejecimiento
+  examples: |
+    - indice de envegecimiento
+    - indice de edad avanzada 
+    - nivel de edad 
+
+#industia pequena
+- intent: int_industria_pequeña
+  examples: |
+    - industria pequeña
+    - asosicacion de camara de la industria 
+    - camara de la industria 
+
+#infraestructura de transporte
+- intent: int_infraestructura_transporte
+  examples: | 
+    - infraestructura de transporte 
+    - transporte
+    - transporte publico
+    - buses
+    - linea de buses
+    - bus
+    - liena de bus 5
+
 #Intencion: Infraestructura vial
 - intent: int_infraestructura_vial
   examples: |
     - infraestructura vial 
-    - infraestructura vial en [San Joaquin]{"entity:"place", "value":"San Joaquin"} 
+    - infraestructura vial en [San Joaquin]{"entity":"place", "value":"San Joaquin"} 
     - vías 
-    - vías en [Santa Ana]{"entity:"place", "value":"Santa Ana"}
+    - vías en [Santa Ana]{"entity":"place", "value":"Santa Ana"}
     - calles y avenidas 
-    - calles y avenidas de [San Joaquin]{"entity:"place", "value":"San Joaquin"}   
+    - calles y avenidas de [San Joaquin]{"entity":"place", "value":"San Joaquin"}   
     - calles 
-    - calles de [Totoracocha]{"entity:"place", "value":"Totoracocha"} 
+    - calles de [Totoracocha]{"entity":"place", "value":"Totoracocha"} 
     - carretera 
     - carreteras
-    - carreterras en [Cuenca]{"entity:"place", "value":"Cuenca"} 
+    - carreterras en [Cuenca]{"entity":"place", "value":"Cuenca"} 
     - ejecución vial
+    - ejes viales 
+    - eje vial 
+    - red vial
+    - sistema vial 
+    - camino
+    - vias urbanas
+    - viales
+    - ejecucion vial
+    - vial
+    - mantenimiento vial
 
-#Intencion: Alcantarillado
-- intent: int_alcantarillado
+
+#TODO: riesgos
+#Riesgo de deslizamientos
+- intent: int_riesgo_deslizamientos
   examples: |
-    - alcanarillado
-    - alcantarillado en [Sinincay]{"entity:"place", "value":"Sinincay"}
-    - alcantarillas
-    - alcantarillas en [Cuenca]{"entity:"place", "value":"Cuenca"}
-    - Mapa de alcantarillas
-    - ubicación de alcantarillas 
-    - ubicación de alcantarillas en [El Valle]{"entity:"place", "value":"El Valle"}
-    - pozos 
-    - pozos sépticos en [Sidcay]{"entity:"place", "value":"Sidcay"}
+    - riesgo de deslizamientos
+    - riesgos de deslizamintos en [San Joaquin]{"entity":"place", "value":"San Joaquin"}
+    - deslizamientos
+    - deslizamientos en [Baños]{"entity":"place", "value":"Baños"}
+    - deslizamientos de tierra 
+    - deslizamiento de tierra en [Baños]{"entity":"place", "value":"Baños"}
+    - deslaves 
+    - deslaves
+    - riesgo de deslave
+    - riesgo de deslave en [Baños]{"entity":"place", "value":"Baños"}
 
-
-#redes hidrograficas
-- intent: int_redes_hidrografias
+#Riesgos de Caida Geologica
+- intent: int_riesgo_caidas
   examples: |
-    - vertientes de agua
-    - vertientes de agua en [Totorachocha]{"entity:"place","value":"Totorachocha"}
-    - redes hidrograficas 
-    - redes hidrograficas en [Cuenca]{"entity:"place","value":"Cuenca"}
+    - risgo geológico
+    - riesgo geológico en [Tarqui]{"entity":"place", "value":"Tarqui"} 
+    - riesgos geológicos
+    - riesgos geológicos en [Turi]{"entity":"place", "value":"Turi"}
+    - riesgo de caida
+    - riesgo de caida en [Baños]{"entity":"place", "value":"Baños"}
+    - riesgos de caidas 
+    - riesgos de caidas en [Turi]{"entity":"place", "value":"Turi"}
+
+#Inspecciones de riesgos
+- intent: int_inspecciones_de_riesgos
+  examples: |
+    - inpecciones de riesgos
+    - inpecciones de riesgos en [Turi]{"entity":"place", "value":"Turi"}
+    - inpecciones tecnicas de riesgos
+    - inpecciones tecnicas de riesgos en [Turi]{"entity":"place", "value":"Turi"}
+
+#Internet
+- intent: int_internet
+  examples: |
+    - internet
+    - wifi
+    - puntos de acceso
+    - servicio de internet
+    - antenas de covertura
+    - cobertura fibra optica
+    - cobertura GPON
+    - lienas de fibra optica
+    - distribución de fibra optica
+
+#jerarquia_de_asentamientos
+- intent: int_jerarquia_de_asentamientos
+  examples: |
+    - jerarquia de asentamientos
+    - jerarquia de asentamientos en [Turi]{"entity":"place", "value":"Turi"}
 
 
+#limites
+- intent: int_limites
+  examples: |
+    - limites en [Turi]{"entity":"place", "value":"Turi"}
+    - limite 
+    - limitación en [Turi]{"entity":"place", "value":"Turi"}
+    - limite parroquial
+    - limite de barrios de [Cuenca]{"entity":"place","value":"Cuenca"}
+
+#manzanas 
+- intent: int_manzanas
+  examples: |
+    - manzanas
+    - manzanas de [Cuenca]{"entity":"place","value":"Cuenca"}
+
+#montanas y lomas
+- intent: int_montañas_y_lomas
+  examples: |
+    - montañas y lomas
+    - montañas y lomas de [Cuenca]{"entity":"place","value":"Cuenca"}
+    - montañas de [Cuenca]{"entity":"place","value":"Cuenca"}
+    - lomas de [Cuenca]{"entity":"place","value":"Cuenca"}
+    - cerros de [Cuenca]{"entity":"place","value":"Cuenca"}
+    - cordillera
+    - macizo
+    - monte 
+    - serranía
+    - cumbre
+
+#parroquias
+- intent: int_parroquias
+  examples: |
+    - parroquias
+    - parroquias de [Cuenca]{"entity":"place","value":"Cuenca"}
+
+#Relieves
+- intent: int_relieves
+  examples: |
+    - relieve
+    - relieve de [Baños]{"entity":"place", "value":"Baños"}
+    - relieve en [Baños]{"entity":"place", "value":"Baños"}
+    - relieves
+    - relieves en [Baños]{"entity":"place", "value":"Baños"}
+    - relieves de [San Joaquin]{"entity":"place", "value":"San Joaquin"}
+  
+#Intecnio de tipos y clasificacion de suelo
+- intent: int_tipos_de_suelo
+  examples: |
+    - tipos de suelo
+    - clasificación de suelo
+    - tipos de suelo en [San Joaquin]{"entity":"place", "value":"San Joaquin"}
+    - clasificación de suelo [San Joaquin]{"entity":"place", "value":"San Joaquin"}
+
+#Intecion: Zona Agricola
+- intent: int_zona_agricola
+  examples: |
+    - zona agrícola 
+    - zona agricola en [Ricaurte]{"entity":"place", "value":"Ricaurte"}
+    - zona agricola en [San Joaquin]{"entity":"place", "value":"San Joaquin"}
+    - zonas agricolas en [El Valle]{"entity":"place", "value":"El Valle"}
+    - zonas agricolas en [Tarqui]{"entity":"place", "value":"Tarqui"}
+    - cultivos
+    - cultivos en [Ricaurte]{"entity":"place", "value":"Ricaurte"}
+    - zona para cultivar
+    - zona para cultivar en [El Valle]{"entity":"place", "value":"El Valle"}
+  
+#Intecion: Zona Insdustrian grande
+- intent: int_zona_insdustrial_grande
+  examples: |
+    - zona industrial grande
+    - zona industrial grande [Ricaurte]{"entity":"place","value":"Ricaurte"}
+    - zona industrial grande en [San Joaquin]{"entity":"place", "value":"San Joaquin"}
+    - zonas industriales grandes en [San Joaquin]{"entity":"place", "value":"San Joaquin"}
+    - zonas industriales grandes en [Tarqui]{"entity":"place", "value":"Tarqui"}
+    - industria
+    - insdustria en [Tarqui]{"entity":"place", "value":"Tarqui"}
+    - industrias
+    - industrias en [Tarqui]{"entity":"place", "value":"Tarqui"} 
+    - industrias grandes 
+    - industrias grandes en [Tarqui]{"entity":"place", "value":"Tarqui"}
+    - fabrica
+    - fabricas
+    - fabricas de [Tarqui]{"entity":"place", "value":"Tarqui"}
+    - fabricas grandes en  en [Tarqui]{"entity":"place", "value":"Tarqui"}
 

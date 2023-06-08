@@ -1,0 +1,142 @@
+[
+    {
+        "title": "Open Street Map - Humanitaire",
+        "baseLayer": true,
+        "visible": false,
+        "type": "osm",
+        "url": "https://a.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png",
+        "maxZoom": 19,
+        "optionsFromCapabilities": true,
+        "params": {}
+    },
+    {
+        "title": "Open Street Map",
+        "baseLayer": true,
+        "visible": true,
+        "type": "osm",
+        "url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+        "maxZoom": 19,
+        "optionsFromCapabilities": true,
+        "params": {}
+    },
+    {
+        "title": "FichaForestal",
+        "baseLayer": false,
+        "visible": true,
+        "type": "wms",
+        "url": "https://gis.uazuay.edu.ec/geoserver/inventario_forestal/wms?",
+        "layers": "FichaForestal",
+        "version": "1.3.2",
+        "queryable": true
+    },
+    {
+        "title": "emac_lineas",
+        "baseLayer": false,
+        "visible": true,
+        "type": "wms",
+        "url": "https://gis.uazuay.edu.ec/geoserver/emac/wms?",
+        "layers": "emac_lineas",
+        "version": "1.3.2",
+        "queryable": true
+    },
+    {
+        "title": "areas_verdes",
+        "baseLayer": false,
+        "visible": true,
+        "type": "wms",
+        "url": "https://gis.uazuay.edu.ec/geoserver/emac/wms?",
+        "layers": "areas_verdes",
+        "version": "1.3.2",
+        "queryable": true
+    },
+    {
+        "title": "bancas",
+        "baseLayer": false,
+        "visible": true,
+        "type": "wms",
+        "url": "https://gis.uazuay.edu.ec/geoserver/emac/wms?",
+        "layers": "bancas",
+        "version": "1.3.2",
+        "queryable": true
+    },
+    {
+        "title": "barandas",
+        "baseLayer": false,
+        "visible": true,
+        "type": "wms",
+        "url": "https://gis.uazuay.edu.ec/geoserver/emac/wms?",
+        "layers": "barandas",
+        "version": "1.3.2",
+        "queryable": true
+    },
+    {
+        "title": "coliseo",
+        "baseLayer": false,
+        "visible": true,
+        "type": "wms",
+        "url": "https://gis.uazuay.edu.ec/geoserver/emac/wms?",
+        "layers": "coliseo",
+        "version": "1.3.2",
+        "queryable": true
+    },
+    {
+        "title": "elementos_afectan",
+        "baseLayer": false,
+        "visible": true,
+        "type": "wms",
+        "url": "https://gis.uazuay.edu.ec/geoserver/emac/wms?",
+        "layers": "elementos_afectan",
+        "version": "1.3.2",
+        "queryable": true
+    },
+    {
+        "title": "jardineras",
+        "baseLayer": false,
+        "visible": true,
+        "type": "wms",
+        "url": "https://gis.uazuay.edu.ec/geoserver/emac/wms?",
+        "layers": "jardineras",
+        "version": "1.3.2",
+        "queryable": true
+    },
+    {
+        "title": "papeleras",
+        "baseLayer": false,
+        "visible": true,
+        "type": "wms",
+        "url": "https://gis.uazuay.edu.ec/geoserver/emac/wms?",
+        "layers": "papeleras",
+        "version": "1.3.2",
+        "queryable": true
+    },
+    {
+        "title": "pergolas",
+        "baseLayer": false,
+        "visible": true,
+        "type": "wms",
+        "url": "https://gis.uazuay.edu.ec/geoserver/emac/wms?",
+        "layers": "pergolas",
+        "version": "1.3.2",
+        "queryable": true
+    },
+    {
+        "title": "pisos",
+        "baseLayer": false,
+        "visible": true,
+        "type": "wms",
+        "url": "https://gis.uazuay.edu.ec/geoserver/emac/wms?",
+        "layers": "pisos",
+        "version": "1.3.2",
+        "queryable": true
+    },
+    {
+        "title": "plantas",
+        "baseLayer": false,
+        "visible": true,
+        "type": "wms",
+        "url": "https://gis.uazuay.edu.ec/geoserver/emac/wms?",
+        "layers": "plantas",
+        "version": "1.3.2",
+        "queryable": true
+    }
+]

@@ -3,21 +3,88 @@ version: "3.1"
 intents:
   - greet
   - goodbye
-  - affirm
+  - affirmacion
   - deny
   - mood_great
-  - mood_unhappy
   - bot_challenge
-  - affirmacion
   - int_saltar
   - int_ricaurte_construccion
   - int_ej_postes
   - int_ej_sayausi
   - int_ej_sanjoaquin
+  - int_ej_farmacia
+  - int_zona_agricola
+  - int_zona_insdustrial_grande
+  - int_tipos_de_suelo
+  - int_relieves
+  - int_areas_protegidas
+  - int_areas_historicas
+  - int_areas_verdes
+  - int_areas_verdes_arboles
+  - int_parques
+  - int_cajas
+  - int_infraestructura_vial
   - int_redes_hidrografias
+  - int_accidentes_de_transito
+  - int_actividades_economicas
+  - int_adjudicacion_de_agua
+  - int_adultos_mayores
+  - int_personas_con_discapacidad
+  - int_alcantarillado
+  - int_asentamientos_humanos
+  - int_biosfera
+  - int_cabecera_cantonal
+  - int_calidad_del_aire
+  - int_canalizacion
+  - int_cantones_del_azuay
+  - int_cartografia
+  - int_catastro
+  - int_circuito
+  - int_clima
+  - int_lluvia
+  - int_fenomeno_de_niño
+  - int_cobertura_vegetal
+  - int_cuencas_hidrograficas
+  - int_distritos
+  - int_ductos
+  - int_energia_electrica
+  - int_equipo_aprovisionamiento
+  - int_bienestar_social
+  - int_equipo_educacion
+  - int_equipo_recoleccion
+  - int_equipo_recreacion_deporte
+  - int_equipo_salud
+  - int_equipo_seguridad
+  - int_equipo_servicios
+  - int_erosion_del_suelo
+  - int_estaciones_tranvia
+  - int_etapa
+  - int_explotacion_minera
+  - int_gas
+  - int_gasolineras
+  - int_geologia
+  - int_geopedologia
+  - int_humedales
+  - int_imagenes_satelitales
+  - int_incendios
+  - int_indice_envejecimiento
+  - int_industria_pequeña
+  - int_infraestructura_transporte
+  - int_riesgo_deslizamientos
+  - int_riesgo_caidas
+  - int_inspecciones_de_riesgos
+  - int_internet
+  - int_jerarquia_de_asentamientos
+  - int_limites
+  - int_manzanas
+  - int_montañas_y_lomas
+  - int_parroquias
 
 
-actions: 
+entities: 
+  - place
+
+actions:
   - action_hello
   - action_buttons_sino
   - action_open_index
@@ -25,7 +92,76 @@ actions:
   - action_open_ricaurte
   - action_sayausi
   - action_sanjoaquin
+  - action_farmacias
   - action_redes_hidrograficas
+  - action_accidentes_de_transito_siniestros
+  - action_actividades_economicas
+  - action_adjudicaciones_de_agua
+  - action_adultos_mayores
+  - action_adultos_mayores_discapacidad
+  - action_alcantarillado
+  - action_areas_historicas
+  - action_areas_protegidas
+  - action_areas_verdes
+  - action_areas_verdes_arboles
+  - action_areas_verdes_parque_cajas
+  - action_parques
+  - action_asentamientos_humanos
+  - action_asentamientos_indigeneas
+  - action_biosfera
+  - action_cabecera_cantonal
+  - action_calidad_del_aire
+  - action_canalizacion
+  - action_cantones_del_azual
+  - action_cartografia
+  - action_catastro
+  - action_circuito
+  - action_cobertura_vegetal
+  - action_clima
+  - action_lluvia
+  - action_fenomeno_de_niño
+  - action_convertura_vegetal
+  - action_cuencas_hidrograficas
+  - action_distritos
+  - action_ductos
+  - action_energia_electrica
+  - action_equipamiento_aprovisionamiento
+  - action_equipamiento_bienestar_social
+  - action_equipamiento_educacion
+  - action_equipamiento_recoleccion
+  - action_equipamiento_recreacion_y_deporte
+  - action_equipamiento_salud
+  - action_equipamiento_seguridad
+  - action_equipamiento_servicio
+  - action_erosion_de_suelos
+  - action_estaciones
+  - action_etapa
+  - action_explotacion_minera
+  - action_gas
+  - action_gasolineras
+  - action_geologia
+  - action_geopedologia
+  - action_humedales
+  - action_imagen_satelital
+  - action_incendios
+  - action_indice_de_envegecimiento
+  - action_industria_pequeña
+  - action_infrestructura_transporte
+  - action_infrestructura_vial
+  - action_inspecciones_de_riesgos
+  - action_internet
+  - action_jerarquia_de_asentamientos
+  - action_limites
+  - action_manzanas
+  - action_montañas_y_lomas
+  - action_parroquias
+  - action_riesgo_de_deslizamientos
+  - action_riesgos_de_caida
+  - action_relieve
+  - action_tipos_de_suelos
+  - action_zona_agricola
+  - action_zona_industrial
+  - utter_te_ayudo_algo_mas
 
 responses:
   utter_bienvenida:
@@ -33,16 +169,16 @@ responses:
 
   utter_msj_bienvenida:
   - text: "Bienvenido, soy tu Asistente Virtual UCuenca y te ayudare a encontrar la  geoinformación, de los planes de ordenamiento territorial existentes en del Cantón CUENCA para que los visualices en el visor de mapas."
-  
+
   utter_msj_ejemplos:
-  - text: "Puedes pedir cosas como por ejemplo: 
+  - text: "Puedes pedir cosas como por ejemplo:
             \n- Muestra los limites del canton Cuenca.
-            \n- Muestra las áreas Patrimonio Cultural de la parroquia El Batán.  
+            \n- Muestra las áreas Patrimonio Cultural de la parroquia El Batán.
             \n- Muestra Zonas Agrícolas (Aqui se muestra en general para el Canton Cuenca)
-            \n- Búsquedas mas especificas con lenguaje tecnico. 
+            \n- Búsquedas mas especificas con lenguaje tecnico.
           "
 
-  utter_ricarte: 
+  utter_ricarte:
   - text: "cuenca_ricaurte_construcciones"
 
   utter_procesando:
@@ -57,15 +193,17 @@ responses:
   utter_listo_veamos_el_mapa:
   - text: "Listo empecemos a ver en el mapa \n¿Que información necesitas ver?"
 
-  utter_resp_ricaurte: 
+  utter_resp_ricaurte:
   - text: "https://infra-geo-ouverte.github.io/igo2/?context=_default&zoom=13&center=-78.99208,-2.8762&invisiblelayers=*&visiblelayers=89053566f0abfa20b936f539b27066bd,935177c0cf3af93c98ede61d8664ad47,92dbfd9238c22d3f8dcd9b288185d242,6143562e58898a852eeb658ba493e8e7,fond_osm_hot&wmsUrl=https%3A%2F%2Fgis.uazuay.edu.ec%2Fgeoserver%2Fcobertura_vegetal_5k%2Fwms%3F&wmsLayers=(ricaurte_construcciones:igoz16)"
 
   utter_resp_postes:
   - text: "https://infra-geo-ouverte.github.io/igo2/?context=_default&zoom=17&center=-79.00376,-2.89791&invisiblelayers=*&visiblelayers=508b5791b7ff3809f103bc57e1b50970,935177c0cf3af93c98ede61d8664ad47,92dbfd9238c22d3f8dcd9b288185d242,6143562e58898a852eeb658ba493e8e7,fond_osm_hot&arcgisUrl=https%3A%2F%2Fgeoservicios2.centrosur.gob.ec%2Fgeoservicios%2Frest%2Fservices%2FGeoportal_Publico%2FGeopPublic_RedesDist_rsgis1%2FMapServer&arcgisLayers=(2:igoz17)"
 
   utter_te_ayudo_algo_mas:
-  - text: "Te ayudo en algo mas? \nPuedes escribir otra consulta"
+  - text: "̉¿Te ayudo en algo mas? \nPuedes escribir otra consulta"
 
+  utter_cargando_visor:
+  - text: "Cargando Visor {eje}."
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
