@@ -117,6 +117,7 @@ nlu:
 - intent: int_ej_sanjoaquin
   examples: |
     - inundaciones en San Joaquin
+    - inundaciones San Joaquin
 
 
 #Geologia
@@ -128,7 +129,7 @@ nlu:
 
 
 #redes hidrograficas
-- intent: int_redes_hidrografias
+- intent: int_redes_hidrograficas
   examples: |
     - vertientes de agua
     - vertientes de agua [en el barrio totorachocha]{"entity":"place","value":"totorachocha"}                    

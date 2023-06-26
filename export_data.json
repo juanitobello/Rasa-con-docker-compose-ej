@@ -20,122 +20,42 @@
         "params": {}
     },
     {
-        "title": "FichaForestal",
+        "title": "Margenes_proteccion_rios_2019_IERSE",
         "baseLayer": false,
         "visible": true,
         "type": "wms",
-        "url": "https://gis.uazuay.edu.ec/geoserver/inventario_forestal/wms?",
-        "layers": "FichaForestal",
+        "url": "https://gis.uazuay.edu.ec/geoserver/PlanificacionTerritorial/wms?",
+        "layers": "Margenes_proteccion_rios_2019_IERSE",
         "version": "1.3.2",
         "queryable": true
     },
     {
-        "title": "emac_lineas",
+        "title": "Rios_principales_50K_2013_IGM",
         "baseLayer": false,
         "visible": true,
         "type": "wms",
-        "url": "https://gis.uazuay.edu.ec/geoserver/emac/wms?",
-        "layers": "emac_lineas",
+        "url": "https://gis.uazuay.edu.ec/geoserver/PlanificacionTerritorial/wms?",
+        "layers": "Rios_principales_50K_2013_IGM",
         "version": "1.3.2",
         "queryable": true
     },
     {
-        "title": "areas_verdes",
+        "title": "Rios_quebradas_50k_2013_IGM",
         "baseLayer": false,
         "visible": true,
         "type": "wms",
-        "url": "https://gis.uazuay.edu.ec/geoserver/emac/wms?",
-        "layers": "areas_verdes",
+        "url": "https://gis.uazuay.edu.ec/geoserver/PlanificacionTerritorial/wms?",
+        "layers": "Rios_quebradas_50k_2013_IGM",
         "version": "1.3.2",
         "queryable": true
     },
     {
-        "title": "bancas",
+        "title": "ricaurte_cursos_agua",
         "baseLayer": false,
         "visible": true,
         "type": "wms",
-        "url": "https://gis.uazuay.edu.ec/geoserver/emac/wms?",
-        "layers": "bancas",
-        "version": "1.3.2",
-        "queryable": true
-    },
-    {
-        "title": "barandas",
-        "baseLayer": false,
-        "visible": true,
-        "type": "wms",
-        "url": "https://gis.uazuay.edu.ec/geoserver/emac/wms?",
-        "layers": "barandas",
-        "version": "1.3.2",
-        "queryable": true
-    },
-    {
-        "title": "coliseo",
-        "baseLayer": false,
-        "visible": true,
-        "type": "wms",
-        "url": "https://gis.uazuay.edu.ec/geoserver/emac/wms?",
-        "layers": "coliseo",
-        "version": "1.3.2",
-        "queryable": true
-    },
-    {
-        "title": "elementos_afectan",
-        "baseLayer": false,
-        "visible": true,
-        "type": "wms",
-        "url": "https://gis.uazuay.edu.ec/geoserver/emac/wms?",
-        "layers": "elementos_afectan",
-        "version": "1.3.2",
-        "queryable": true
-    },
-    {
-        "title": "jardineras",
-        "baseLayer": false,
-        "visible": true,
-        "type": "wms",
-        "url": "https://gis.uazuay.edu.ec/geoserver/emac/wms?",
-        "layers": "jardineras",
-        "version": "1.3.2",
-        "queryable": true
-    },
-    {
-        "title": "papeleras",
-        "baseLayer": false,
-        "visible": true,
-        "type": "wms",
-        "url": "https://gis.uazuay.edu.ec/geoserver/emac/wms?",
-        "layers": "papeleras",
-        "version": "1.3.2",
-        "queryable": true
-    },
-    {
-        "title": "pergolas",
-        "baseLayer": false,
-        "visible": true,
-        "type": "wms",
-        "url": "https://gis.uazuay.edu.ec/geoserver/emac/wms?",
-        "layers": "pergolas",
-        "version": "1.3.2",
-        "queryable": true
-    },
-    {
-        "title": "pisos",
-        "baseLayer": false,
-        "visible": true,
-        "type": "wms",
-        "url": "https://gis.uazuay.edu.ec/geoserver/emac/wms?",
-        "layers": "pisos",
-        "version": "1.3.2",
-        "queryable": true
-    },
-    {
-        "title": "plantas",
-        "baseLayer": false,
-        "visible": true,
-        "type": "wms",
-        "url": "https://gis.uazuay.edu.ec/geoserver/emac/wms?",
-        "layers": "plantas",
+        "url": "https://gis.uazuay.edu.ec/geoserver/cobertura_vegetal_5k/wms?",
+        "layers": "ricaurte_cursos_agua",
         "version": "1.3.2",
         "queryable": true
     }

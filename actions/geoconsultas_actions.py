@@ -255,6 +255,7 @@ def addinfDatos(tittle, url, tipo, layer):
 
 #Para buscar dentro del dataframe
 def funDinamicQuerry(intencion):
+    intencion= intencion.replace("_", " ")
     df= pd.read_csv("actions/Base_de_Conocimiento_actions.csv")
     df.dropna()
     #print(df.head())
@@ -282,6 +283,6 @@ def funDinamicQuerry(intencion):
     
     return eje_pertenece
     
+#funDinamicQuerry("actividades_economicas")
 #funDinamicQuerry("redes hidrograficas")
 #funDinamicQuerry("parques")
-#funDinamicQuerry("ductos")

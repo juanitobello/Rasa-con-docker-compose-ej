@@ -7,4 +7,4 @@ RUN python -m pip install -U pip
 #RUN pip3 install -r requirements.txt
 RUN pip install -r requirements.txt
 EXPOSE 5055
-#USER root
+USER 1001

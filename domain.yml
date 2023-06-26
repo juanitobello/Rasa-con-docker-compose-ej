@@ -24,7 +24,7 @@ intents:
   - int_parques
   - int_cajas
   - int_infraestructura_vial
-  - int_redes_hidrografias
+  - int_redes_hidrograficas
   - int_accidentes_de_transito
   - int_actividades_economicas
   - int_adjudicacion_de_agua
