@@ -5,7 +5,7 @@ intents:
   - goodbye
   - affirmacion
   - deny
-  - mood_great
+  - mood_gracias
   - bot_challenge
   - int_indicaciones
   - int_saltar

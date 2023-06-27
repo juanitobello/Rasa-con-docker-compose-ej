@@ -9,6 +9,8 @@ services:
       - "./:/app"
       ports: 
         - "5005:5005"
+      networks:
+        - ide-network
     action_server:
       container_name: "action_server"
       build: 
@@ -18,3 +20,9 @@ services:
         - ./data:/app/data
       ports:
         - 5055:5055
+      networks:
+        - ide-network
+networks:
+  ide-network:
+    driver: bridge
+

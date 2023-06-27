@@ -228,7 +228,7 @@ datos= [
 ]
 
 def createVisor(datos):
-    endpoint= "https://201.159.220.172/api/igo2/createTemporalViwer"
+    endpoint= "http://201.159.220.172/api/igo2/createTemporalViwer"
     # Convertir los datos en formato JSON
     json_datos= json.dumps(datos)
     # # Encabezados de la solicitud
@@ -286,3 +286,4 @@ def funDinamicQuerry(intencion):
 #funDinamicQuerry("actividades_economicas")
 #funDinamicQuerry("redes hidrograficas")
 #funDinamicQuerry("parques")
+#funDinamicQuerry("ductos")
