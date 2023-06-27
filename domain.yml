@@ -7,6 +7,7 @@ intents:
   - deny
   - mood_great
   - bot_challenge
+  - int_indicaciones
   - int_saltar
   - int_ricaurte_construccion
   - int_ej_postes
@@ -165,17 +166,27 @@ actions:
 
 responses:
   utter_bienvenida:
-  - text: "Hola, Soy tu asistente virtual"
+  - text: "Hola, Soy tu Asistente Virtual"
+  
+  utter_indicaciones:
+  - text: "Te ayudaré a buscar geoinformación del cantón Cuenca y visualizarlo en el mapa.
+            \n
+            \nPara buscar geoinformación debes escrbir:             
+            \nlo que necesitas + un lugar 
+            \nPor ejemplo: parques en Cuenca
+            \n 
+            \nLuego debes dar clíc sobre el [Texto Azul] para ver el mapa."
 
   utter_msj_bienvenida:
   - text: "Bienvenido, soy tu Asistente Virtual UCuenca y te ayudare a encontrar la  geoinformación, de los planes de ordenamiento territorial existentes en del Cantón CUENCA para que los visualices en el visor de mapas."
 
   utter_msj_ejemplos:
   - text: "Puedes pedir cosas como por ejemplo:
-            \n- Muestra los limites del canton Cuenca.
-            \n- Muestra las áreas Patrimonio Cultural de la parroquia El Batán.
+            \n- Manzanas del canton Cuenca.
+            \n- Ver las áreas Patrimonio Cultural de El Batán.
             \n- Muestra Zonas Agrícolas (Aqui se muestra en general para el Canton Cuenca)
-            \n- Búsquedas mas especificas con lenguaje tecnico.
+            \n- Búsquedas más específicas con lenguaje técnico.
+            \n- Escribe \"ayuda\" para instrucciones.
           "
 
   utter_ricarte:
@@ -187,8 +198,11 @@ responses:
   utter_escoge_item:
   - text: "Escoge un ítem para mostrar en el mapa: "
 
-  utter_greet:
-  - text: "Hola como estas?"
+  utter_de_nada:
+  - text: "De nada."
+  - text: "Espero te haya servido"
+  - text: "No hay problema"
+  - text: "Estoy para lo que necesites"
 
   utter_listo_veamos_el_mapa:
   - text: "Listo empecemos a ver en el mapa \n¿Que información necesitas ver?"
@@ -200,7 +214,12 @@ responses:
   - text: "https://infra-geo-ouverte.github.io/igo2/?context=_default&zoom=17&center=-79.00376,-2.89791&invisiblelayers=*&visiblelayers=508b5791b7ff3809f103bc57e1b50970,935177c0cf3af93c98ede61d8664ad47,92dbfd9238c22d3f8dcd9b288185d242,6143562e58898a852eeb658ba493e8e7,fond_osm_hot&arcgisUrl=https%3A%2F%2Fgeoservicios2.centrosur.gob.ec%2Fgeoservicios%2Frest%2Fservices%2FGeoportal_Publico%2FGeopPublic_RedesDist_rsgis1%2FMapServer&arcgisLayers=(2:igoz17)"
 
   utter_te_ayudo_algo_mas:
-  - text: "̉¿Te ayudo en algo mas? \nPuedes escribir otra consulta"
+  - text: "¿Te ayudo en algo más? 
+          \n
+          \nPuedes escribir otra consulta..."
+  - text: "Si necesitas instrucciones escribe: ayuda
+          \n
+          \nEscribe otra consulta..."
 
   utter_cargando_visor:
   - text: "Cargando Visor {eje}."
@@ -219,7 +238,7 @@ responses:
   - text: "Bye"
 
   utter_iamabot:
-  - text: "Soy una IA creada por JB."
+  - text: "Soy una IA creada por Juan Bustamante para el proyecto AV PPGIS del grupo de investigación el IDEs de la Universidad de Cuenca."
 
 session_config:
   session_expiration_time: 60

@@ -12,12 +12,19 @@ stories:
 - story: story_resp_buttons_affirmacion
   steps:
   - intent: affirmacion
-  - action: action_open_index
+  - action: utter_indicaciones
   - action: utter_te_ayudo_algo_mas
 
 - story: story_resp_buttons_int_saltar
   steps:
   - intent: int_saltar
+  - action: utter_listo_veamos_el_mapa
+
+- story: story_indicaciones
+  steps:
+  - intent: int_indicaciones
+  - action: utter_bienvenida
+  - action: utter_indicaciones
   - action: utter_listo_veamos_el_mapa
 
 - story: story_ej_ricaurte
@@ -51,9 +58,9 @@ stories:
   - action: utter_te_ayudo_algo_mas
 
 
-- story: story_redes_hidrografias
+- story: story_redes_hidrograficas
   steps: 
-  - intent: int_redes_hidrografias
+  - intent: int_redes_hidrograficas
   - action: action_redes_hidrograficas
   - action: utter_te_ayudo_algo_mas
 

@@ -11,3 +11,18 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+  - action: action_open_index
+  - action: utter_te_ayudo_algo_mas
+
+- rule: rule_indicaciones
+  steps:
+  - intent: int_indicaciones
+  - action: utter_bienvenida
+  - action: utter_indicaciones
+  - action: utter_listo_veamos_el_mapa
+
+- rule: rule_gracias
+  steps: 
+  - intent: mood_gracias
+  - action: utter_de_nada
+  - action: utter_te_ayudo_algo_mas

@@ -73,7 +73,7 @@ class ActionButtonsSiNo(Action):
             {"payload":'/int_saltar', "title": "Saltar"},
         ]
 
-        dispatcher.utter_message(text="Bienvenido! ¿Deseas más instrucciones?", buttons=ops)
+        dispatcher.utter_message(text="¿Deseas más instrucciones?", buttons=ops)
 
         return []
 
@@ -88,8 +88,8 @@ class ActionOpenIndex(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        dispatcher.utter_message(text="Redirigiendo...")
-        dispatcher.utter_message(text='[Curso AV IDE](https://ide.ucuenca.edu.ec/?p=412)')
+        dispatcher.utter_message(text="Aquí tienes página principal del [Proyecto AV-PPGIS](https://ide.ucuenca.edu.ec/?page_id=147)")
+        dispatcher.utter_message(text='Aquí tienes un curso de capación en IDEs [Curso AV IDE UCuenca](https://educacionvirtual.cedia.edu.ec/courses/course-v1:CEDIA+UC-BD-001+2023_T1/about)')
         openLink()
         return []
 
@@ -176,7 +176,7 @@ class ActionRedesHidrograficas(Action):
         
         eje_pertenece = geo.funDinamicQuerry("redes_hidrograficas")
         dispatcher.utter_message(response="utter_cargando_visor", eje= eje_pertenece)
-        dispatcher.utter_message(text="Click aqui para ver resultado: [redes_hidrograficas](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
+        dispatcher.utter_message(text="Click aqui para ver resultado: [redes_hidrográficas](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
         return []
 
 
@@ -193,7 +193,7 @@ class Action_accidentes_de_transito_siniestros(Action):
 
 		eje_pertenece = geo.funDinamicQuerry("accidentes_de_transito_siniestros")
 		dispatcher.utter_message(response="utter_cargando_visor", eje= eje_pertenece)
-		dispatcher.utter_message(text="Clic aquí para ver resultado: [accidentes_de_transito_siniestros](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
+		dispatcher.utter_message(text="Clic aquí para ver resultado: [accidentes_de_tránsito_siniestros](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
 		return []
 
 #Action actividades_economicas
@@ -208,7 +208,7 @@ class Action_actividades_economicas(Action):
 
 		eje_pertenece = geo.funDinamicQuerry("actividades_economicas")
 		dispatcher.utter_message(response="utter_cargando_visor", eje= eje_pertenece)
-		dispatcher.utter_message(text="Clic aquí para ver resultado: [actividades_economicas](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
+		dispatcher.utter_message(text="Clic aquí para ver resultado: [actividades_económicas](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
 		return []
 
 
@@ -285,7 +285,7 @@ class Action_areas_historicas(Action):
 
 		eje_pertenece = geo.funDinamicQuerry("areas_historicas")
 		dispatcher.utter_message(response="utter_cargando_visor", eje= eje_pertenece)
-		dispatcher.utter_message(text="Clic aquí para ver resultado: [areas_historicas](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
+		dispatcher.utter_message(text="Clic aquí para ver resultado: [áreas_históricas](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
 		return []
 
 #Action areas_protegidas
@@ -300,7 +300,7 @@ class Action_areas_protegidas(Action):
 
 		eje_pertenece = geo.funDinamicQuerry("areas_protegidas")
 		dispatcher.utter_message(response="utter_cargando_visor", eje= eje_pertenece)
-		dispatcher.utter_message(text="Clic aquí para ver resultado: [areas_protegidas](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
+		dispatcher.utter_message(text="Clic aquí para ver resultado: [áreas_protegidas](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
 		return []
 
 #Action areas_verdes
@@ -315,7 +315,7 @@ class Action_areas_verdes(Action):
 
 		eje_pertenece = geo.funDinamicQuerry("areas_verdes")
 		dispatcher.utter_message(response="utter_cargando_visor", eje= eje_pertenece)
-		dispatcher.utter_message(text="Clic aquí para ver resultado: [areas_verdes](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
+		dispatcher.utter_message(text="Clic aquí para ver resultado: [áreas_verdes](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
 		return []
 
 #Action areas_verdes_arboles
@@ -330,7 +330,7 @@ class Action_areas_verdes_arboles(Action):
 
 		eje_pertenece = geo.funDinamicQuerry("areas_verdes_arboles")
 		dispatcher.utter_message(response="utter_cargando_visor", eje= eje_pertenece)
-		dispatcher.utter_message(text="Clic aquí para ver resultado: [areas_verdes_arboles](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
+		dispatcher.utter_message(text="Clic aquí para ver resultado: [áreas_verdes_árboles](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
 		return []
 
 #Action areas_verdes_parque_cajas
@@ -360,7 +360,7 @@ class Action_areas_verdes_parques(Action):
 
 		eje_pertenece = geo.funDinamicQuerry("parques")
 		dispatcher.utter_message(response="utter_cargando_visor", eje= eje_pertenece)
-		dispatcher.utter_message(text="Clic aquí para ver resultado: [areas_verdes_parques](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
+		dispatcher.utter_message(text="Clic aquí para ver resultado: [áreas_verdes_parques](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
 		return []
 
 #Action asentamientos_humanos
@@ -390,7 +390,7 @@ class Action_biosfera(Action):
 
 		eje_pertenece = geo.funDinamicQuerry("biosfera")
 		dispatcher.utter_message(response="utter_cargando_visor", eje= eje_pertenece)
-		dispatcher.utter_message(text="Clic aquí para ver resultado: [biosfera](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
+		dispatcher.utter_message(text="Clic aquí para ver resultado: [biósfera](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
 		return []
 	
 #Action cabecera_cantonal
@@ -435,7 +435,7 @@ class Action_canalizacion(Action):
 
 		eje_pertenece = geo.funDinamicQuerry("canalizacion")
 		dispatcher.utter_message(response="utter_cargando_visor", eje= eje_pertenece)
-		dispatcher.utter_message(text="Clic aquí para ver resultado: [canalizacion](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
+		dispatcher.utter_message(text="Clic aquí para ver resultado: [canalización](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
 		return []
 
 #Action cantones_del_azual
@@ -532,7 +532,7 @@ class Action_clima_fenomeno_del_niño(Action):
 class Action_clima_lluvia(Action):
 
 	def name(self) -> Text:
-		return "action_clima_lluvia"
+		return "action_lluvia"
 
 	def run(self, dispatcher: CollectingDispatcher,
 			tracker: Tracker,
@@ -615,7 +615,7 @@ class Action_energia_electrica(Action):
 
 		eje_pertenece = geo.funDinamicQuerry("energia_electrica")
 		dispatcher.utter_message(response="utter_cargando_visor", eje= eje_pertenece)
-		dispatcher.utter_message(text="Clic aquí para ver resultado: [energia_electrica](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
+		dispatcher.utter_message(text="Clic aquí para ver resultado: [energía_electrica](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
 		return []
 
 
@@ -661,7 +661,7 @@ class Action_equipamiento_educacion(Action):
 
 		eje_pertenece = geo.funDinamicQuerry("equipamiento_educacion")
 		dispatcher.utter_message(response="utter_cargando_visor", eje= eje_pertenece)
-		dispatcher.utter_message(text="Clic aquí para ver resultado: [equipamiento_educacion](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
+		dispatcher.utter_message(text="Clic aquí para ver resultado: [equipamiento_educación](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
 		return []
 	
 
@@ -677,7 +677,7 @@ class Action_equipamiento_recoleccion(Action):
 
 		eje_pertenece = geo.funDinamicQuerry("equipamiento_recoleccion")
 		dispatcher.utter_message(response="utter_cargando_visor", eje= eje_pertenece)
-		dispatcher.utter_message(text="Clic aquí para ver resultado: [equipamiento_recoleccion](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
+		dispatcher.utter_message(text="Clic aquí para ver resultado: [equipamiento_recolección](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
 		return []
 	
 
@@ -693,7 +693,7 @@ class Action_equipamiento_recreacion_y_deporte(Action):
 
 		eje_pertenece = geo.funDinamicQuerry("equipamiento_recreacion_y_deporte")
 		dispatcher.utter_message(response="utter_cargando_visor", eje= eje_pertenece)
-		dispatcher.utter_message(text="Clic aquí para ver resultado: [equipamiento_recreacion_y_deporte](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
+		dispatcher.utter_message(text="Clic aquí para ver resultado: [equipamiento_recreación_y_deporte](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
 		return []
 
 #Action equipamiento_salud
@@ -753,7 +753,7 @@ class Action_erosion_de_suelos(Action):
 
 		eje_pertenece = geo.funDinamicQuerry("erosion_de_suelos")
 		dispatcher.utter_message(response="utter_cargando_visor", eje= eje_pertenece)
-		dispatcher.utter_message(text="Clic aquí para ver resultado: [erosion_de_suelos](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
+		dispatcher.utter_message(text="Clic aquí para ver resultado: [erosión_de_suelos](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
 		return []
 
 #Action estaciones
@@ -798,7 +798,7 @@ class Action_explotacion_minera(Action):
 
 		eje_pertenece = geo.funDinamicQuerry("explotacion_minera")
 		dispatcher.utter_message(response="utter_cargando_visor", eje= eje_pertenece)
-		dispatcher.utter_message(text="Clic aquí para ver resultado: [explotacion_minera](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
+		dispatcher.utter_message(text="Clic aquí para ver resultado: [explotación_minera](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
 		return []
 
 #Action gas
@@ -843,7 +843,7 @@ class Action_geologia(Action):
 
 		eje_pertenece = geo.funDinamicQuerry("geologia")
 		dispatcher.utter_message(response="utter_cargando_visor", eje= eje_pertenece)
-		dispatcher.utter_message(text="Clic aquí para ver resultado: [geologia](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
+		dispatcher.utter_message(text="Clic aquí para ver resultado: [geología](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
 		return []
 
 
@@ -859,7 +859,7 @@ class Action_geopedologia(Action):
 
 		eje_pertenece = geo.funDinamicQuerry("geopedologia")
 		dispatcher.utter_message(response="utter_cargando_visor", eje= eje_pertenece)
-		dispatcher.utter_message(text="Clic aquí para ver resultado: [geopedologia](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
+		dispatcher.utter_message(text="Clic aquí para ver resultado: [geopedología](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
 		return []
 
 #Action humedales
@@ -919,7 +919,7 @@ class Action_indice_de_envegecimiento(Action):
 
 		eje_pertenece = geo.funDinamicQuerry("indice_de_envegecimiento")
 		dispatcher.utter_message(response="utter_cargando_visor", eje= eje_pertenece)
-		dispatcher.utter_message(text="Clic aquí para ver resultado: [indice_de_envegecimiento](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
+		dispatcher.utter_message(text="Clic aquí para ver resultado: [índice_de_envegecimiento](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
 		return []
 
 #Action industria_pequeña
@@ -1009,7 +1009,7 @@ class Action_jerarquia_de_asentamientos(Action):
 
 		eje_pertenece = geo.funDinamicQuerry("jerarquia_de_asentamientos")
 		dispatcher.utter_message(response="utter_cargando_visor", eje= eje_pertenece)
-		dispatcher.utter_message(text="Clic aquí para ver resultado: [jerarquia_de_asentamientos](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
+		dispatcher.utter_message(text="Clic aquí para ver resultado: [jerarquía_de_asentamientos](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
 		return []
 
 
@@ -1025,7 +1025,7 @@ class Action_limites(Action):
 
 		eje_pertenece = geo.funDinamicQuerry("limites")
 		dispatcher.utter_message(response="utter_cargando_visor", eje= eje_pertenece)
-		dispatcher.utter_message(text="Clic aquí para ver resultado: [limites](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
+		dispatcher.utter_message(text="Clic aquí para ver resultado: [límites](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
 		return []
 
 #Action manzanas
@@ -1145,7 +1145,7 @@ class Action_zona_agricola(Action):
 
 		eje_pertenece = geo.funDinamicQuerry("zona_agricola")
 		dispatcher.utter_message(response="utter_cargando_visor", eje= eje_pertenece)
-		dispatcher.utter_message(text="Clic aquí para ver resultado: [zona_agricola](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
+		dispatcher.utter_message(text="Clic aquí para ver resultado: [zona_agrícola](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
 		return []
 	
 #Action zona_industrial

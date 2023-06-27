@@ -27,7 +27,7 @@ nlu:
 - intent: int_saltar
   examples: |
     - saltar
-    - saltar instrucciones
+    - saltar pasar
 
 - intent: deny
   examples: |
@@ -39,22 +39,12 @@ nlu:
     - no way
     - not really
 
-- intent: mood_great
+- intent: mood_gracias
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - gracias
+    - muchas gracias
+    - perfecto gracias
+    - era lo que necesitaba
 
 - intent: mood_unhappy
   examples: |
@@ -78,15 +68,19 @@ nlu:
     - quien eres?
     - eres un robot?
     - con quien hablo?
+    - cual es tu proposito?
 
-- intent: direcciones
+- intent: int_indicaciones
   examples: | 
-    - muestrame la direccion de 
-    - quiero saber por donde ir a 
-    - direccion de 
-    - ruta de 
-    - por donde ir
-    - calles de
+    - ayuda
+    - que puedes hacer?
+    - indicaciones
+    - que sabes hacer
+    - tutorial de uso
+    - que puedes buscar?
+    - instrucciones
+    - tutorial
+    - como funciona?
 
 - intent: int_ricaurte_construccion
   examples: |

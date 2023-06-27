@@ -20,42 +20,22 @@
         "params": {}
     },
     {
-        "title": "Margenes_proteccion_rios_2019_IERSE",
+        "title": "Manzanas_2014_INEC_Z6",
         "baseLayer": false,
         "visible": true,
         "type": "wms",
-        "url": "https://gis.uazuay.edu.ec/geoserver/PlanificacionTerritorial/wms?",
-        "layers": "Margenes_proteccion_rios_2019_IERSE",
+        "url": "https://gis.uazuay.edu.ec/geoserver/VisorSenplades/wms?",
+        "layers": "Manzanas_2014_INEC_Z6",
         "version": "1.3.2",
         "queryable": true
     },
     {
-        "title": "Rios_principales_50K_2013_IGM",
+        "title": "06_Manzanas_2014_INEC",
         "baseLayer": false,
         "visible": true,
         "type": "wms",
         "url": "https://gis.uazuay.edu.ec/geoserver/PlanificacionTerritorial/wms?",
-        "layers": "Rios_principales_50K_2013_IGM",
-        "version": "1.3.2",
-        "queryable": true
-    },
-    {
-        "title": "Rios_quebradas_50k_2013_IGM",
-        "baseLayer": false,
-        "visible": true,
-        "type": "wms",
-        "url": "https://gis.uazuay.edu.ec/geoserver/PlanificacionTerritorial/wms?",
-        "layers": "Rios_quebradas_50k_2013_IGM",
-        "version": "1.3.2",
-        "queryable": true
-    },
-    {
-        "title": "ricaurte_cursos_agua",
-        "baseLayer": false,
-        "visible": true,
-        "type": "wms",
-        "url": "https://gis.uazuay.edu.ec/geoserver/cobertura_vegetal_5k/wms?",
-        "layers": "ricaurte_cursos_agua",
+        "layers": "06_Manzanas_2014_INEC",
         "version": "1.3.2",
         "queryable": true
     }
