@@ -36,9 +36,6 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
-def openLink():
-    webbrowser.open('https://google.com',  new=1, autoraise=True)
-
 def openRicaurte():
     webbrowser.open('https://ide.ucuenca.edu.ec/geoportal/viwer/3?context=3&zoom=13&center=-78.98518,-2.87754&invisiblelayers=*&visiblelayers=89053566f0abfa20b936f539b27066bd,OSM',  new=1, autoraise=True)
 
@@ -90,7 +87,6 @@ class ActionOpenIndex(Action):
 
         dispatcher.utter_message(text="Aquí tienes página principal del [Proyecto AV-PPGIS](https://ide.ucuenca.edu.ec/?page_id=147)")
         dispatcher.utter_message(text='Aquí tienes un curso de capación en IDEs [Curso AV IDE UCuenca](https://educacionvirtual.cedia.edu.ec/courses/course-v1:CEDIA+UC-BD-001+2023_T1/about)')
-        openLink()
         return []
 
 class ActionFarmacias(Action):
@@ -514,10 +510,10 @@ class Action_clima(Action):
 		return []
 
 #Action clima_fenomeno_del_niño
-class Action_clima_fenomeno_del_niño(Action):
+class Action_clima_fenomeno_del_nino(Action):
 
 	def name(self) -> Text:
-		return "action_clima_fenomeno_del_niño"
+		return "action_clima_fenomeno_del_nino"
 
 	def run(self, dispatcher: CollectingDispatcher,
 			tracker: Tracker,
@@ -525,7 +521,7 @@ class Action_clima_fenomeno_del_niño(Action):
 
 		eje_pertenece = geo.funDinamicQuerry("clima_fenomeno_del_niño")
 		dispatcher.utter_message(response="utter_cargando_visor", eje= eje_pertenece)
-		dispatcher.utter_message(text="Clic aquí para ver resultado: [clima_fenomeno_del_niño](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
+		dispatcher.utter_message(text="Clic aquí para ver resultado: [clima_fenómeno_del_niño](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
 		return []
 
 #Action clima_lluvia
@@ -568,7 +564,7 @@ class Action_cuencas_hidrograficas(Action):
 			tracker: Tracker,
 			domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-		eje_pertenece = geo.funDinamicQuerry("cuencas_hidrograficas")
+		eje_pertenece = geo.funDinamicQuerry("cuencas_hidrográficas")
 		dispatcher.utter_message(response="utter_cargando_visor", eje= eje_pertenece)
 		dispatcher.utter_message(text="Clic aquí para ver resultado: [cuencas_hidrograficas](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
 		return []
@@ -971,7 +967,7 @@ class Action_infrestructura_vial(Action):
 class Action_inpecciones_de_riesgos(Action):
 
 	def name(self) -> Text:
-		return "action_inpecciones_de_riesgos"
+		return "action_inspecciones_de_riesgos"
 
 	def run(self, dispatcher: CollectingDispatcher,
 			tracker: Tracker,
@@ -1071,6 +1067,21 @@ class Action_parroquias(Action):
 		eje_pertenece = geo.funDinamicQuerry("parroquias")
 		dispatcher.utter_message(response="utter_cargando_visor", eje= eje_pertenece)
 		dispatcher.utter_message(text="Clic aquí para ver resultado: [parroquias](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
+		return []
+
+#Action parroquias
+class Action_parroquias(Action):
+
+	def name(self) -> Text:
+		return "action_predios"
+
+	def run(self, dispatcher: CollectingDispatcher,
+			tracker: Tracker,
+			domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+		eje_pertenece = geo.funDinamicQuerry("predios")
+		dispatcher.utter_message(response="utter_cargando_visor", eje= eje_pertenece)
+		dispatcher.utter_message(text="Clic aquí para ver resultado: [predios_urbanos](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
 		return []
 	
     #Action riesgo_de_deslizamientos

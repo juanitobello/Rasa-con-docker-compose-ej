@@ -26,3 +26,13 @@ rules:
   - intent: mood_gracias
   - action: utter_de_nada
   - action: utter_te_ayudo_algo_mas
+
+
+- rule: rulw_Capturar_mensajes_no_clasificados
+  condition:
+  - active_loop: null
+  steps:
+  - intent: nlu_fallback
+  - action: utter_responder_desconocido
+  - action: utter_indicaciones
+

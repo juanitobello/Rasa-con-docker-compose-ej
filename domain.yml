@@ -6,6 +6,7 @@ intents:
   - affirmacion
   - deny
   - mood_gracias
+  - nlu_fallback
   - bot_challenge
   - int_indicaciones
   - int_saltar
@@ -16,7 +17,6 @@ intents:
   - int_ej_farmacia
   - int_zona_agricola
   - int_zona_insdustrial_grande
-  - int_tipos_de_suelo
   - int_relieves
   - int_areas_protegidas
   - int_areas_historicas
@@ -43,9 +43,9 @@ intents:
   - int_circuito
   - int_clima
   - int_lluvia
-  - int_fenomeno_de_niño
+  - int_fenomeno_de_nino
   - int_cobertura_vegetal
-  - int_cuencas_hidrograficas
+  - int_cuencas_lagos
   - int_distritos
   - int_ductos
   - int_energia_electrica
@@ -80,6 +80,8 @@ intents:
   - int_manzanas
   - int_montañas_y_lomas
   - int_parroquias
+  - int_predios
+  - int_tipos_de_suelo
 
 
 entities: 
@@ -88,6 +90,7 @@ entities:
 actions:
   - action_hello
   - action_buttons_sino
+  - action_default_fallback
   - action_open_index
   - action_open_postes
   - action_open_ricaurte
@@ -120,9 +123,9 @@ actions:
   - action_cobertura_vegetal
   - action_clima
   - action_lluvia
-  - action_fenomeno_de_niño
+  - action_fenomeno_de_nino
   - action_convertura_vegetal
-  - action_cuencas_hidrograficas
+  - action_cuencas_lagos
   - action_distritos
   - action_ductos
   - action_energia_electrica
@@ -156,6 +159,7 @@ actions:
   - action_manzanas
   - action_montañas_y_lomas
   - action_parroquias
+  - action_predios
   - action_riesgo_de_deslizamientos
   - action_riesgos_de_caida
   - action_relieve
@@ -170,15 +174,15 @@ responses:
   
   utter_indicaciones:
   - text: "Te ayudaré a buscar geoinformación del cantón Cuenca y visualizarlo en el mapa.
-            \n
-            \nPara buscar geoinformación debes escrbir:             
-            \nlo que necesitas + un lugar 
-            \nPor ejemplo: parques en Cuenca
-            \n 
+            \n\n
+            Para buscar geoinformación debes escrbir: 
+            \n\"lo que necesitas\" + \"una parroquia\"
+            
+            \nPor ejemplo: parques en Cuenca 
             \nLuego debes dar clíc sobre el [Texto Azul] para ver el mapa."
 
   utter_msj_bienvenida:
-  - text: "Bienvenido, soy tu Asistente Virtual UCuenca y te ayudare a encontrar la  geoinformación, de los planes de ordenamiento territorial existentes en del Cantón CUENCA para que los visualices en el visor de mapas."
+  - text: "Bienvenido, soy tu Asistente Virtual UCuenca. Mi objetivo es brindarle asistencia en la búsqueda de información geoespacial relacionada con los planes de ordenamiento territorial en el cantón CUENCA, para que pueda visualizarlos utilizando nuestro visor de mapas. Estoy aquí para ayudarte en todo lo que necesites.
 
   utter_msj_ejemplos:
   - text: "Puedes pedir cosas como por ejemplo:
@@ -205,7 +209,9 @@ responses:
   - text: "Estoy para lo que necesites"
 
   utter_listo_veamos_el_mapa:
-  - text: "Listo empecemos a ver en el mapa \n¿Que información necesitas ver?"
+  - text: "Listo empecemos a ver en el mapa. 
+  
+          \n¿Que información necesitas ver?"
 
   utter_resp_ricaurte:
   - text: "https://infra-geo-ouverte.github.io/igo2/?context=_default&zoom=13&center=-78.99208,-2.8762&invisiblelayers=*&visiblelayers=89053566f0abfa20b936f539b27066bd,935177c0cf3af93c98ede61d8664ad47,92dbfd9238c22d3f8dcd9b288185d242,6143562e58898a852eeb658ba493e8e7,fond_osm_hot&wmsUrl=https%3A%2F%2Fgis.uazuay.edu.ec%2Fgeoserver%2Fcobertura_vegetal_5k%2Fwms%3F&wmsLayers=(ricaurte_construcciones:igoz16)"
@@ -224,6 +230,13 @@ responses:
   utter_cargando_visor:
   - text: "Cargando Visor {eje}."
 
+  utter_responder_desconocido:
+  - text: "Lo siento, no encontre resultados, mi función es proporcionar y ayudarte con búsquedas sobre Geoinformación para el cantón Cuenca y los visualices en el mapa."
+  - text: "Lo siento, no tengo conocimiento sobre ese tema. La información que tengo es sobre ordenamiento territorial del cantón Cuenca en Ecuador y los visualices en el mapa."
+  - text: "Lo siento, no encontre resultados, mi conocimiento se limita a temas el ordenamiento territorial del cantón Cuenca en Ecuador. Si necesitas instrucciones para realizar consultas por favor escribe \"ayuda\"."
+  - text: "Como modelo de IA, solo tengo acceso a geoinformación del cantón Cuenca. ¿En qué puedo ayudarte hoy?"
+  - text: "Lo siento, no puedo recuperar información que no sea del cantón Cuenca en Ecuador. Por favor escribe la palabra \"ayuda\" para brindarte información."
+
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
@@ -239,6 +252,10 @@ responses:
 
   utter_iamabot:
   - text: "Soy una IA creada por Juan Bustamante para el proyecto AV PPGIS del grupo de investigación el IDEs de la Universidad de Cuenca."
+  - text: "Soy un Geobot, un modelo de NLP desarrollado como tesis de grado de Juan Bustamante para el proyecto AVPPGIS. Mi propósito es brindar geoinformación sobre el Visor de mapas de la IDE UCuenca.
+          \n Estoy aquí para proporcionar asistencia y compartir conocimientos basados en temas de ordenamiento territorial en el cantón Cuenca. ¿En qué puedo ayudarte hoy?"
+  - text: "Soy un programa de computadora creado para interactuar con usuarios a través de texto y el visor de la IDE UCuenca."
+  - text: "Soy un Asistente Virtual desarrollado por Juan Bustamante para facilitar la comunicación y proporcionar geoinformación en el visor de mapas de la IDE UCuenca. ¿En qué puedo ayudarte hoy?"
 
 session_config:
   session_expiration_time: 60

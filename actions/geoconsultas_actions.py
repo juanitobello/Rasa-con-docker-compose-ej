@@ -228,7 +228,8 @@ datos= [
 ]
 
 def createVisor(datos):
-    endpoint= "http://201.159.220.172/api/igo2/createTemporalViwer"
+    endpoint= "https://201.159.220.172/api/igo2/createTemporalViwer"
+    #endpoint= "https://172.17.0.1/api/igo2/createTemporalViwer"
     # Convertir los datos en formato JSON
     json_datos= json.dumps(datos)
     # # Encabezados de la solicitud
@@ -257,15 +258,17 @@ def addinfDatos(tittle, url, tipo, layer):
 def funDinamicQuerry(intencion):
     intencion= intencion.replace("_", " ")
     df= pd.read_csv("actions/Base_de_Conocimiento_actions.csv")
+    #df= pd.read_csv("./Base_de_Conocimiento_actions.csv")
     df.dropna()
     #print(df.head())
     df2=df[df.subeje.str.contains(pat=intencion,na=False, case=False)]
-    df3=df2[['Titulo Capa', 'Enlace servicio', 'Nombre Capa', 'Identificador', 'Tipo', "Eje Pertenece"]]
+    df3=df2[['Organizacion','Titulo Capa', 'Enlace servicio', 'Nombre Capa', 'Identificador', 'Tipo', "Eje Pertenece"]]
     print("Coincidencias con subeje: "+str(len(df3)))
+    #print(df3.head())
     
     #Para recrrer el data frame resultante 
     for indice, fila in df3.iterrows():
-        addinfDatos(fila['Titulo Capa'], fila['Enlace servicio'], fila['Tipo'], fila['Nombre Capa'])
+        addinfDatos(fila['Identificador'], fila['Enlace servicio'], fila['Tipo'], fila['Nombre Capa'])
     
 #Para comprobar que se crearon correctaente los json
     print("Lista a enviar subeje + 2="+str(len(datos)))
@@ -273,17 +276,22 @@ def funDinamicQuerry(intencion):
         json.dump(datos, fp, indent=4)
     
 #Extraer EJE pertence
-    eje_pertenece=df3.iloc[0,5]    
+    eje_pertenece=df3.iloc[0,6]    
     print("corrdenadas xmin, ymin, xmax, ymax, epsg, null")    
+    valores_unicos = df3['Organizacion'].unique()
+    valores_cadena = ', '.join(map(str, valores_unicos))
+    eje_insticion= eje_pertenece + "\n\nCapas encontradas: "+str(len(df3))+"\nRecuperando información de: " + valores_cadena
+    print(eje_insticion)
 #crear vision
     createVisor(datos)
     print('Se creo el mapa')
     del datos[2:len(datos)]
     print("Limpio "+str(len(datos)))
     
-    return eje_pertenece
+    return eje_insticion
     
 #funDinamicQuerry("actividades_economicas")
 #funDinamicQuerry("redes hidrograficas")
 #funDinamicQuerry("parques")
 #funDinamicQuerry("ductos")
+funDinamicQuerry("imagen satelital")

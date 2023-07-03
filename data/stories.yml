@@ -202,16 +202,22 @@ stories:
   - action: action_lluvia
   - action: utter_te_ayudo_algo_mas
 
-- story: story_fenomeno_de_niño
+- story: story_fenomeno_de_nino
   steps:
-  - intent: int_fenomeno_de_niño
-  - action: action_fenomeno_de_niño
+  - intent: int_fenomeno_de_nino
+  - action: action_fenomeno_de_nino
   - action: utter_te_ayudo_algo_mas
 
 - story: story_cobertura_vegetal
   steps:
   - intent: int_cobertura_vegetal
   - action: action_cobertura_vegetal
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_cuencas_lagos
+  steps:
+  - intent: int_cuencas_lagos
+  - action: action_cuencas_lagos
   - action: utter_te_ayudo_algo_mas
 
 - story: story_distritos
@@ -364,6 +370,12 @@ stories:
   - action: action_infrestructura_transporte
   - action: utter_te_ayudo_algo_mas
 
+- story: story_infraestructura_vial
+  steps: 
+  - intent: int_infraestructura_vial
+  - action: action_infrestructura_vial
+  - action: utter_te_ayudo_algo_mas
+
 - story: story_riesgo_deslizamientos
   steps:
   - intent: int_riesgo_deslizamientos
@@ -416,6 +428,12 @@ stories:
   steps:
   - intent: int_parroquias
   - action: action_parroquias
+  - action: utter_te_ayudo_algo_mas
+
+- story: story_predios
+  steps: 
+  - intent: int_predios
+  - action: action_predios
   - action: utter_te_ayudo_algo_mas
 
 - story: story_relieves

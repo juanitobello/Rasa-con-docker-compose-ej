@@ -46,6 +46,14 @@ nlu:
     - perfecto gracias
     - era lo que necesitaba
 
+- intent: nlu_fallback
+  examples: | 
+    - computadora
+    - comida
+    - restaurantes
+    - tiendas
+    - calculos
+
 - intent: mood_unhappy
   examples: |
     - my day was horrible
@@ -86,7 +94,6 @@ nlu:
   examples: |
     - construcciones en Ricaurte 
     - muestra construcciones en Ricaurte
-    - predios contruidos en Ricaurte
     - muestra edificaciones en Ricaurte 
   
 - intent: int_ej_postes
@@ -368,17 +375,19 @@ nlu:
     - cantidad de lluvia
     - cantidad de lluvia en [Cuenca]{"entity":"place","value":"Cuenca"}
 
-- intent: int_fenomeno_de_niño
+- intent: int_fenomeno_de_nino
   examples: |
     - fenomeno del niño
     - corriente del niño
     - Osilación del Sur
+    - El Niño
+    - frío del niño
 
 #covertura vegetal 
 - intent: int_cobertura_vegetal
   examples: |
-    - covertura vegetal 
-    - covertura vegetal en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - cobertura vegetal 
+    - cobertura vegetal en [Cuenca]{"entity":"place","value":"Cuenca"}
     - equipamiento de paramo y vegetación herbacea
     - equipamiento de vegetacion herbacea
     - equipamiento de paramo
@@ -388,13 +397,12 @@ nlu:
     - campo de vegatación herbacea en [Ricaurte]{"entity":"place", "value":"Ricaurte"}
 
 #cuencas hidrografcas 
-- intent: int_cuencas_hidrograficas 
+- intent: int_cuencas_lagos
   examples: |
     - lagos 
     - lagunas 
     - lagunas en [Cuenca]{"entity":"place","value":"Cuenca"}
-    - cuencas hidrigraficas
-    - cuencas hidrográficas en [Cuenca]{"entity":"place","value":"Cuenca"}
+    - cuencas
 
 #distritos
 - intent: int_distritos
@@ -700,6 +708,9 @@ nlu:
     - calles 
     - calles de [Totoracocha]{"entity":"place", "value":"Totoracocha"} 
     - carretera 
+    - autopiasta
+    - autopistas
+    - circunvalación
     - carreteras
     - carreterras en [Cuenca]{"entity":"place", "value":"Cuenca"} 
     - ejecución vial
@@ -713,6 +724,10 @@ nlu:
     - ejecucion vial
     - vial
     - mantenimiento vial
+    - panamericana norte
+    - panamericana sur
+    - autopista E35
+
 
 
 #TODO: riesgos
@@ -745,23 +760,25 @@ nlu:
 #Inspecciones de riesgos
 - intent: int_inspecciones_de_riesgos
   examples: |
-    - inpecciones de riesgos
-    - inpecciones de riesgos en [Turi]{"entity":"place", "value":"Turi"}
-    - inpecciones tecnicas de riesgos
-    - inpecciones tecnicas de riesgos en [Turi]{"entity":"place", "value":"Turi"}
+    - inspección de riesgo
+    - inspecciones de riesgos
+    - inspecciones de riesgos en [Turi]{"entity":"place", "value":"Turi"}
+    - inspecciones técnicas de riesgos
+    - inspecciones técnicas de riesgos en [Turi]{"entity":"place", "value":"Turi"}
 
 #Internet
 - intent: int_internet
   examples: |
     - internet
     - wifi
+    - fibra óptica
     - puntos de acceso
     - servicio de internet
-    - antenas de covertura
+    - antenas de cobertura
     - cobertura fibra optica
     - cobertura GPON
-    - lienas de fibra optica
-    - distribución de fibra optica
+    - líenas de fibra óptica
+    - distribución de fibra óptica
 
 #jerarquia_de_asentamientos
 - intent: int_jerarquia_de_asentamientos
@@ -804,6 +821,12 @@ nlu:
   examples: |
     - parroquias
     - parroquias de [Cuenca]{"entity":"place","value":"Cuenca"}
+
+#predios
+- intent: int_predios
+  examples: |
+    - predios
+    - predios urbanos
 
 #Relieves
 - intent: int_relieves
