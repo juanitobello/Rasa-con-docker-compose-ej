@@ -182,7 +182,7 @@ responses:
             \nLuego debes dar clíc sobre el [Texto Azul] para ver el mapa."
 
   utter_msj_bienvenida:
-  - text: "Bienvenido, soy tu Asistente Virtual UCuenca. Mi objetivo es brindarle asistencia en la búsqueda de información geoespacial relacionada con los planes de ordenamiento territorial en el cantón CUENCA, para que pueda visualizarlos utilizando nuestro visor de mapas. Estoy aquí para ayudarte en todo lo que necesites.
+  - text: "Bienvenido, soy tu Asistente Virtual UCuenca. Mi objetivo es brindarle asistencia en la búsqueda de información geoespacial relacionada con los planes de ordenamiento territorial en el cantón CUENCA, para que pueda visualizarlos utilizando nuestro visor de mapas. Estoy aquí para ayudarte en todo lo que necesites." 
 
   utter_msj_ejemplos:
   - text: "Puedes pedir cosas como por ejemplo:

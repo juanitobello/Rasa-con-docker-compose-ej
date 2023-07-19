@@ -175,6 +175,19 @@ class ActionRedesHidrograficas(Action):
         dispatcher.utter_message(text="Click aqui para ver resultado: [redes_hidrográficas](https://ide.ucuenca.edu.ec/geoportal/viwer/100)")
         return []
 
+# class ActionGeoConsulta(Action):
+
+#     def name(self) -> Text:
+#         return "action_geoconsulta"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        
+#         eje_pertenece = geo.funDinamicQuerry(tracker.latest_message['intent'], tracker.latest_message.get('place'))
+#         dispatcher.utter_message(response="utter_cargando_visor", eje= eje_pertenece)
+        
+#         return []
 
 ########-------------------------------------------------ORDEN ALFABETICO-----------------------------------------------------------------------------
 #Action accidentes_de_transito_siniestros

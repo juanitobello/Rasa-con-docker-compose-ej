@@ -251,6 +251,7 @@ def addinfDatos(tittle, url, tipo, layer):
         "layers": layer,
         "version": "1.3.2",
         "queryable":True,
+        "optionsFromCapabilities": True,
       }
     datos.append(a)
 
@@ -259,6 +260,13 @@ def funDinamicQuerry(intencion):
     intencion= intencion.replace("_", " ")
     df= pd.read_csv("actions/Base_de_Conocimiento_actions.csv")
     #df= pd.read_csv("./Base_de_Conocimiento_actions.csv")
+#     url = "https://ide.ucuenca.edu.ec/api/basededatosespacial/capas"
+#     response = requests.get(url)
+
+# # Verificar si la solicitud fue exitosa
+#     if response.status_code == 200:
+#     # Obtener los registros de la respuesta JSON
+#         df = response.json()
     df.dropna()
     #print(df.head())
     df2=df[df.subeje.str.contains(pat=intencion,na=False, case=False)]

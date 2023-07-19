@@ -20,233 +20,113 @@
         "params": {}
     },
     {
-        "title": "cuenca_fotografia_satelital_1",
+        "title": "cuenca_estaciones_etapa",
         "baseLayer": false,
         "visible": true,
         "type": "wms",
-        "url": "http://ide.cuenca.gob.ec/geoserver/ide/wms?",
-        "layers": "ide:igm_cuenca_nv_f4b_d_25cm_rgb_20181023",
+        "url": "https://gis.uazuay.edu.ec/geoserver/riesgos_cuenca/wms?",
+        "layers": "EstacionesETAPA",
         "version": "1.3.2",
-        "queryable": true
+        "queryable": true,
+        "optionsFromCapabilities": true
     },
     {
-        "title": "cuenca_fotografia_satelital_2",
+        "title": "cuenca_levantamientos_etapa",
         "baseLayer": false,
         "visible": true,
-        "type": "wms",
-        "url": "http://ide.cuenca.gob.ec/geoserver/ide/wms?",
-        "layers": "ide:igm_cuenca_nv_f4a_c_25cm_rgb_20181023",
+        "type": "arcgisrest",
+        "url": "https://geo.etapa.net.ec/arcgis/rest/services/Publico/Levantamientos/FeatureServer",
+        "layers": "0",
         "version": "1.3.2",
-        "queryable": true
+        "queryable": true,
+        "optionsFromCapabilities": true
     },
     {
-        "title": "cuenca_fotografia_satelital_3",
+        "title": "cuenca_levantamientos_etapa_1",
         "baseLayer": false,
         "visible": true,
-        "type": "wms",
-        "url": "http://ide.cuenca.gob.ec/geoserver/ide/wms?",
-        "layers": "ide:igm_cuenca_nv_f3b_d_25_cm_rgb_20181024",
+        "type": "arcgisrest",
+        "url": "https://geo.etapa.net.ec/arcgis/rest/services/Publico/Levantamientos/MapServer",
+        "layers": "0",
         "version": "1.3.2",
-        "queryable": true
+        "queryable": true,
+        "optionsFromCapabilities": true
     },
     {
-        "title": "cuenca_fotografia_urbana",
+        "title": "cuenca_puntos_recaudacion_etapa",
         "baseLayer": false,
         "visible": true,
-        "type": "wms",
-        "url": "http://ide.cuenca.gob.ec/geoserver/ide/wms?",
-        "layers": "ide:ide_quickbird",
+        "type": "arcgisrest",
+        "url": "https://geo.etapa.net.ec/arcgis/rest/services/Publico/Locales_Recaudacion/MapServer",
+        "layers": "0",
         "version": "1.3.2",
-        "queryable": true
+        "queryable": true,
+        "optionsFromCapabilities": true
     },
     {
-        "title": "cuenca_fotografia_satelital_2010",
+        "title": "cuenca_parroquias_etapa",
         "baseLayer": false,
         "visible": true,
-        "type": "wms",
-        "url": "http://ide.cuenca.gob.ec/geoserver/ide/wms?",
-        "layers": "ide:ide_ortofoto2010",
+        "type": "arcgisrest",
+        "url": "https://geo.etapa.net.ec/arcgis/rest/services/Publico/Parroquias/MapServer",
+        "layers": "0",
         "version": "1.3.2",
-        "queryable": true
+        "queryable": true,
+        "optionsFromCapabilities": true
     },
     {
-        "title": "cuenca_fotografia_satelite_blanca_negro",
+        "title": "cuenca_ubicacion_armarios_distribucion_etapa",
         "baseLayer": false,
         "visible": true,
-        "type": "wms",
-        "url": "http://ide.cuenca.gob.ec/geoserver/ide/wms?",
-        "layers": "ide:ide_mosaicobn",
+        "type": "arcgisrest",
+        "url": "https://geo.etapa.net.ec/arcgis/rest/services/Publico/Visor_Telecom/MapServer",
+        "layers": "7",
         "version": "1.3.2",
-        "queryable": true
+        "queryable": true,
+        "optionsFromCapabilities": true
     },
     {
-        "title": "cuenca_fotografia_centro_historico",
+        "title": "cuenca_ubicacion_cajas_dispersion_mediante_cobre",
         "baseLayer": false,
         "visible": true,
-        "type": "wms",
-        "url": "http://ide.cuenca.gob.ec/geoserver/ide/wms?",
-        "layers": "ide:foto2017ch",
+        "type": "arcgisrest",
+        "url": "https://geo.etapa.net.ec/arcgis/rest/services/Publico/Visor_Telecom/MapServer",
+        "layers": "9",
         "version": "1.3.2",
-        "queryable": true
+        "queryable": true,
+        "optionsFromCapabilities": true
     },
     {
-        "title": "cuenca_tarqui_fotografia",
+        "title": "cuenca_cobertura_red_secundaria_cobre_etapa",
         "baseLayer": false,
         "visible": true,
-        "type": "wms",
-        "url": "http://ide.cuenca.gob.ec/geoserver/ide/wms?",
-        "layers": "ide:desc_tarqui_vista_general",
+        "type": "arcgisrest",
+        "url": "https://geo.etapa.net.ec/arcgis/rest/services/Publico/Visor_Telecom/MapServer",
+        "layers": "10",
         "version": "1.3.2",
-        "queryable": true
+        "queryable": true,
+        "optionsFromCapabilities": true
     },
     {
-        "title": "cuenca_sanjoaquin_fotografia",
+        "title": "cuenca_ubicacion_nodos_etapa",
         "baseLayer": false,
         "visible": true,
-        "type": "wms",
-        "url": "http://ide.cuenca.gob.ec/geoserver/ide/wms?",
-        "layers": "ide:desc_sanjoaquin_vista_general",
+        "type": "arcgisrest",
+        "url": "https://geo.etapa.net.ec/arcgis/rest/services/Publico/Visor_Telecom/MapServer",
+        "layers": "12",
         "version": "1.3.2",
-        "queryable": true
+        "queryable": true,
+        "optionsFromCapabilities": true
     },
     {
-        "title": "cuenca_parque_paraiso_relieve",
+        "title": "cuenca_ubicacion_nodos_etapa",
         "baseLayer": false,
         "visible": true,
-        "type": "wms",
-        "url": "https://gis.uazuay.edu.ec/geoserver/dron_multiespectrales/wms?",
-        "layers": "ndre_paraiso_22feb2022_20cm",
+        "type": "arcgisrest",
+        "url": "https://geo.etapa.net.ec/arcgis/rest/services/Publico/Visor_Telecom/MapServer",
+        "layers": "13",
         "version": "1.3.2",
-        "queryable": true
-    },
-    {
-        "title": "cuenca_parque_paraiso_relieve",
-        "baseLayer": false,
-        "visible": true,
-        "type": "wms",
-        "url": "https://gis.uazuay.edu.ec/geoserver/dron_multiespectrales/wms?",
-        "layers": "ndvi_paraiso_22feb2022_20cm",
-        "version": "1.3.2",
-        "queryable": true
-    },
-    {
-        "title": "cuenca_parque_paraiso_relieve",
-        "baseLayer": false,
-        "visible": true,
-        "type": "wms",
-        "url": "https://gis.uazuay.edu.ec/geoserver/dron_multiespectrales/wms?",
-        "layers": "nir_paraiso_22feb2022_20cm",
-        "version": "1.3.2",
-        "queryable": true
-    },
-    {
-        "title": "cuenca_parque_paraiso_relieve",
-        "baseLayer": false,
-        "visible": true,
-        "type": "wms",
-        "url": "https://gis.uazuay.edu.ec/geoserver/dron_multiespectrales/wms?",
-        "layers": "rededge_paraiso_22feb2022_20cm",
-        "version": "1.3.2",
-        "queryable": true
-    },
-    {
-        "title": "cuenca_uda_campus",
-        "baseLayer": false,
-        "visible": true,
-        "type": "wms",
-        "url": "https://gis.uazuay.edu.ec/geoserver/ortofotos_drone/wms?",
-        "layers": "Campus_UDA_2jun2017",
-        "version": "1.3.2",
-        "queryable": true
-    },
-    {
-        "title": "cuenca_parque_artemisa",
-        "baseLayer": false,
-        "visible": true,
-        "type": "wms",
-        "url": "https://gis.uazuay.edu.ec/geoserver/ortofotos_drone/wms?",
-        "layers": "Parque_Artemisa 2_30oct2017_30cm",
-        "version": "1.3.2",
-        "queryable": true
-    },
-    {
-        "title": "cuenca_parque_carlos_cueva",
-        "baseLayer": false,
-        "visible": true,
-        "type": "wms",
-        "url": "https://gis.uazuay.edu.ec/geoserver/ortofotos_drone/wms?",
-        "layers": "Parque_Carlos Cueva_18nov2017_30cm",
-        "version": "1.3.2",
-        "queryable": true
-    },
-    {
-        "title": "cuenca_parque_inclusivo",
-        "baseLayer": false,
-        "visible": true,
-        "type": "wms",
-        "url": "https://gis.uazuay.edu.ec/geoserver/ortofotos_drone/wms?",
-        "layers": "Parque_Inclusivo",
-        "version": "1.3.2",
-        "queryable": true
-    },
-    {
-        "title": "cuenca_parque_paquisha",
-        "baseLayer": false,
-        "visible": true,
-        "type": "wms",
-        "url": "https://gis.uazuay.edu.ec/geoserver/ortofotos_drone/wms?",
-        "layers": "Parque_Paquisha_7ago2018",
-        "version": "1.3.2",
-        "queryable": true
-    },
-    {
-        "title": "cuenca_parque_paraiso",
-        "baseLayer": false,
-        "visible": true,
-        "type": "wms",
-        "url": "https://gis.uazuay.edu.ec/geoserver/ortofotos_drone/wms?",
-        "layers": "Parque_Paraiso",
-        "version": "1.3.2",
-        "queryable": true
-    },
-    {
-        "title": "cuenca_parque_santa_anita",
-        "baseLayer": false,
-        "visible": true,
-        "type": "wms",
-        "url": "https://gis.uazuay.edu.ec/geoserver/ortofotos_drone/wms?",
-        "layers": "Parque_SantaAnita_7ago2018",
-        "version": "1.3.2",
-        "queryable": true
-    },
-    {
-        "title": "cuenca_parque_paraiso2",
-        "baseLayer": false,
-        "visible": true,
-        "type": "wms",
-        "url": "https://gis.uazuay.edu.ec/geoserver/ortofotos_drone/wms?",
-        "layers": "paraiso_6ago2018",
-        "version": "1.3.2",
-        "queryable": true
-    },
-    {
-        "title": "cuenca_tomebamba_rio",
-        "baseLayer": false,
-        "visible": true,
-        "type": "wms",
-        "url": "https://gis.uazuay.edu.ec/geoserver/ortofotos_drone/wms?",
-        "layers": "tomebamba_2019_cepra",
-        "version": "1.3.2",
-        "queryable": true
-    },
-    {
-        "title": "cuenca_uda_campus",
-        "baseLayer": false,
-        "visible": true,
-        "type": "wms",
-        "url": "https://gis.uazuay.edu.ec/geoserver/parques_cuenca/wms?",
-        "layers": "uda_25sep2020_30cm",
-        "version": "1.3.2",
-        "queryable": true
+        "queryable": true,
+        "optionsFromCapabilities": true
     }
 ]
